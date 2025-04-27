@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
 
     return (
         <header className="w-full sticky top-0 left-0 text-black">
-            <div className="relative bg-white border-b border-b-[#000000] border-opacity-15 flex items-center justify-between w-full max-w-screen-xl mx-auto px-4 py-2 md:px-6 lg:hidden">
+            <div className="relative flex items-center justify-between bg-white border-b border-b-[#000000] border-opacity-15 w-full max-w-screen-xl mx-auto px-4 py-2 md:px-6 lg:hidden">
                 <div className="flex items-center justify-center gap-x-2">
                     <img
                         src={Logo}
@@ -57,6 +57,40 @@ export const Header: React.FC = () => {
                     </button>
                 </motion.div>
             </motion.div>
+
+            <div className="hidden relative w-full max-w-screen-xl mx-auto px-6 lg:flex lg:justify-between lg:items-end lg:gap-x-4 lg:px-8 xl:gap-x-5">
+                <div
+                    id="navbar"
+                    className="bg-white flex-1 flex relative items-center justify-between"
+                >
+                    <div className="bg-white h-full w-[400px] absolute right-full"></div>
+                    <div className="flex items-center justify-center gap-x-2">
+                        <img
+                            src={Logo}
+                            alt="Logo"
+                            className="w-6 md:w-7 2xl:w-8"
+                        />
+                        <span className="font-anton font-normal leading-3 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
+                            Command Hive
+                        </span>
+                    </div>
+                    <nav className="z-10 flex items-center gap-x-8 py-3 pr-6 xl:gap-x-12 xl:py-4 xl:pr-12">
+                        {menuItems.slice(0, menuItems.length - 1).map((item, index) => (
+                            <a
+                                key={index}
+                                href={item.link}
+                                className="text-sm font-medium xl:text-base 2xl:text-lg"
+                            >
+                                {item.title}
+                            </a>
+                        ))}
+                    </nav>
+                    <div className="bg-white header-navbar absolute top-0 -right-11 w-44 h-full z-9 xl:w-56 xl:-right-14"></div>
+                </div>
+                <button className="bg-primary h-fit rounded text-black font-anton header-launch-app-button text-base py-1 pr-3 pl-10 xl:pr-8 xl:pl-16 xl:rounded-md xl:py-2 xl:text-lg 2xl:rounded-lg 2xl:text-xl">
+                    Launch App
+                </button>
+            </div>
         </header>
     );
 };
