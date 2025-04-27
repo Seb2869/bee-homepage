@@ -19,7 +19,11 @@
 }
 
 @layer utilities {
-    .footer-top-sharp-edge-rectangle {
+    .footer-top-left-sharp-edge-rectangle {
         background-image: linear-gradient(135deg, #fafafa 40px, transparent 0px);
+    }
+
+    .features-bottom-right-sharp-edge-rectangle {
+        background-image: linear-gradient(-135deg, #fafafa 40px, transparent 0px);
     }
 }

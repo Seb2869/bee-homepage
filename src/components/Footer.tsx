@@ -5,7 +5,7 @@ import Logo from '../assets/logo.webp';
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="bg-black footer-top-sharp-edge-rectangle text-white w-full">
+        <footer className="bg-black footer-top-left-sharp-edge-rectangle text-white w-full">
             <div className="w-full max-w-screen-xl mx-auto px-4 pt-7 md:px-6 md:pt-8 lg:px-8 lg:pt-10 xl:pt-14 2xl:pt-16">
                 <div className="flex flex-col items-center justify-center gap-y-2 md:gap-y-3 2xl:gap-y-4">
                     <div className="flex items-center justify-center gap-x-2">
