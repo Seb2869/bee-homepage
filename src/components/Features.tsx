@@ -34,7 +34,7 @@ export const Features: React.FC = () => {
 
     return (
         <section className="text-white bg-black features-bottom-right-sharp-edge-rectangle">
-            <div className="w-full max-w-screen-xl mx-auto px-4 py-7 flex flex-col gap-y-10 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 xl:gap-y-14 2xl:py-16 2xl:gap-y-16">
+            <div className="w-full max-w-screen-xl mx-auto px-4 py-7 flex flex-col gap-y-14 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 2xl:py-16 2xl:gap-y-16">
                 {features.map((feature, index) => (
                     <div
                         key={index}
