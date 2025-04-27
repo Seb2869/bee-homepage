@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
                         <img
                             src={Logo}
                             alt="Logo"
-                            className="w-6 md:w-7 2xl:2-8"
+                            className="w-6 md:w-7 2xl:w-8"
                         />
                         <span className="font-anton font-normal leading-3 text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                             Command Hive
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
                         dolor in reprehenderit.
                     </p>
                 </div>
-                <button className="w-fit mx-auto flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] mt-5 md:mt-7 md:text-base md:gap-x-1 xl:text-lg xl:mt-8 xl:px-4 xl:py-2 2xl:text-xl 2xl:mt-10">
+                <button className="w-fit mx-auto flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] mt-5 md:mt-7 md:text-base md:gap-x-1 xl:text-lg xl:mt-8 xl:px-4 xl:rounded-md xl:py-2 2xl:text-xl 2xl:mt-10 2xl:rounded-lg">
                     <BiLogoDiscordAlt className="text-2xl md:text-3xl 2xl:text-4xl" />
                     <span>Join Our Discord</span>
                 </button>
