@@ -48,6 +48,7 @@ export const FAQs: React.FC = () => {
                 <div className="w-full md:w-3/5">
                     <h2 className="font-anton text-xl md:text-[22px] lg:text-2xl xl:text-4xl 2xl:text-5xl">
                         Frequently Asked Questions
+                        <span className="text-primary">.</span>
                     </h2>
                     <p className="font-inter font-normal text-xs leading-normal mt-3 md:mt-4 md:text-sm md:leading-relaxed xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-6">
                         Our agents are connected with polymarket MCP, so that they can understand the latest news and

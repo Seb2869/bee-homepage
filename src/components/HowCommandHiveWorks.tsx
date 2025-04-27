@@ -34,7 +34,8 @@ export const HowCommandHiveWorks: React.FC = () => {
                 </div>
                 <div className="w-full flex flex-col gap-y-3 md:w-1/2 md:gap-y-4 xl:gap-y-5 2xl:gap-y-6">
                     <h2 className="font-anton text-xl md:text-[22px] lg:text-2xl xl:text-4xl 2xl:text-5xl">
-                        How Command Hive Works?
+                        How Command Hive Works
+                        <span className="text-primary">?</span>
                     </h2>
                     <p className="font-inter font-normal text-xs leading-normal md:text-sm md:leading-relaxed xl:text-base 2xl:text-lg">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

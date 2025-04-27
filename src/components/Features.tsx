@@ -13,19 +13,19 @@ type Feature = {
 export const Features: React.FC = () => {
     const features: Feature[] = [
         {
-            title: 'Agents that Trade.',
+            title: 'Agents that Trade',
             description:
                 'Our Agents can trade on model context protocols such as quickswap, uniswap, google search, twitter search and trade assets. Depending on how you tune the orchestration bot and the recurring prompt, it can execute trades autonomously or seek confirmations.',
             image: Feature1,
         },
         {
-            title: 'Agents that Assist.',
+            title: 'Agents that Assist',
             description:
                 'Our Agents connect with all the MCPs (Model Context Protocols) and do work that you want including creating pull request for github, managing your email and notifications.',
             image: Feature2,
         },
         {
-            title: 'Agents that Bet.',
+            title: 'Agents that Bet',
             description:
                 'Our agents are connected with polymarket MCP, so that they can understand the latest news and trends, thus be first to add, modify bets on polymarketcap.',
             image: Feature3,
@@ -54,6 +54,7 @@ export const Features: React.FC = () => {
                         >
                             <h2 className="font-anton text-xl md:text-[22px] lg:text-2xl xl:text-4xl 2xl:text-5xl">
                                 {feature.title}
+                                <span className="text-primary">.</span>
                             </h2>
                             <p className="font-inter font-normal text-xs leading-normal md:text-sm md:leading-relaxed xl:text-base 2xl:text-lg">
                                 {feature.description}
