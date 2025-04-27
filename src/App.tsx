@@ -3,12 +3,14 @@ import { FAQs } from './components/FAQs';
 import { Features } from './components/Features';
 import { Footer } from './components/Footer';
 import { HowCommandHiveWorks } from './components/HowCommandHiveWorks';
+import { UserReviews } from './components/UserReviews';
 
 const App: React.FC = () => {
     return (
         <main className="w-screen min-h-screen">
             <HowCommandHiveWorks />
             <Features />
+            <UserReviews />
             <FAQs />
             <Footer />
         </main>
