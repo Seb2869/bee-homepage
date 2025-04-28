@@ -38,4 +38,11 @@
     .header-navbar {
         clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
     }
+
+    .mask-thumbnail {
+        mask-image: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        mask-position: center;
+    }
 }
