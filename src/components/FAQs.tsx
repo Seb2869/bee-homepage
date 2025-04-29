@@ -12,25 +12,26 @@ type Question = {
 
 export const FAQs: React.FC = () => {
     const questions: Question[] = [
-            {
-                question: 'Lorem ipsum dolor',
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
+        {
+            question: 'Do you store private key?',
+            description:
+                'Each agent has its own wallet, if you are building an AI agent that trades, just send funds to the agent address.',
             },
             {
-                question: 'Lorem ipsum dolor sit amet',
+                question: 'How do Command Hive agents stay ahead of trends?',
                 description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
+                    'Our agents tap into Polymarket’s MCP to monitor news and trends in real time, ensuring they act on the latest insights for trading or betting.',
             },
             {
-                question: 'Lorem ipsum dolor sit amet consectetur adipiscing',
+                question: 'Which tools do your agents connect with?',
                 description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
+                    'Our Worker Bees integrate with platforms like GitHub, Quickswap, Uniswap, Polymarket, and more via MCPs.  ',
             },
+            
             {
-                question: 'Lorem ipsum dolor sit amet consectetur',
+                question: 'Is Command Hive secure?',
                 description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
+                    'We prioritize security with encrypted protocols and robust safeguards to protect your data and transactions.',
             },
         ],
         [selectedQuestion, setSelectedQuestion] = useState<number | null>(0);
@@ -51,8 +52,7 @@ export const FAQs: React.FC = () => {
                         <span className="text-primary">.</span>
                     </h2>
                     <p className="font-inter font-normal text-xs leading-normal mt-3 md:mt-4 md:text-sm md:leading-relaxed xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-6">
-                        Our agents are connected with polymarket MCP, so that they can understand the latest news and
-                        trends, thus be first to add, modify bets on polymarketcap.
+                       
                     </p>
                     <div className="mt-8 flex flex-col gap-y-3 md:mt-10 lg:gap-y-4 xl:mt-14 xl:gap-y-5 2xl:mt-16 2xl:gap-y-6">
                         {questions.map((item, index) => (

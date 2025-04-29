@@ -19,10 +19,9 @@ export const Footer: React.FC = () => {
                         </span>
                     </div>
                     <p className="font-inter font-normal text-center text-xs leading-normal md:text-sm md:leading-relaxed lg:px-40 xl:text-base xl:px-56 2xl:text-lg 2xl:px-80">
-                        <strong>Disclaimer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit.
+                        <strong>Disclaimer:</strong> Command Hive’s AI agents are designed to enhance efficiency but rely on user-defined prompts. Results depend on configuration and market conditions. Always review settings and monitor performance.
+
+
                     </p>
                 </div>
                 <button className="w-fit mx-auto flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] mt-5 md:mt-7 md:text-base md:gap-x-1 xl:text-lg xl:mt-8 xl:px-4 xl:rounded-md xl:py-2 2xl:text-xl 2xl:mt-10 2xl:rounded-lg">
@@ -36,12 +35,7 @@ export const Footer: React.FC = () => {
                     <span>
                         <a href="">About Us</a>
                     </span>
-                    <span>
-                        <a href="">Features</a>
-                    </span>
-                    <span>
-                        <a href="">Contact</a>
-                    </span>
+                    
                     <span>
                         <a href="">Launch App</a>
                     </span>

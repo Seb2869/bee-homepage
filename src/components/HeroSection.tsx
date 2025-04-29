@@ -10,13 +10,12 @@ export const HeroSection: React.FC = () => {
             <div className="w-full max-w-screen-xl mx-auto px-4 pt-24 pb-40 md:px-6 md:pb-28 md:pt-32 lg:px-8 lg:pb-36 lg:pt-36 xl:pb-48 xl:pt-52">
                 <div className="w-full">
                     <h1 className="font-anton text-3xl tracking-[0.02rem] md:leading-[1.35] lg:text-5xl lg:leading-tight xl:text-7xl xl:leading-[1.15] xl:tracking-[0.120rem] 2xl:text-[80px]">
-                        Command A Hive<br></br>Of AI Agents Working<br></br>Around The Clock
-                        <span className="text-primary">.</span>
+                        command reliable AI agents <br/> that work {" "}
+                        <span className="text-primary">24*7.</span>
                     </h1>
                     <div className="w-full md:w-1/2 lg:w-2/5">
                         <p className="font-inter font-normal text-xs leading-normal mt-2 md:text-sm md:leading-relaxed md:mt-3 lg:mt-4 xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-6">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.
+                            Our AI agents leverage MCPs[<span className='text-primary'>Model Context Protocols</span>], that autonomously integrate with tools you love. 
                         </p>
                     </div>
                     <button className="w-fit mt-4 flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] md:text-base md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:text-lg xl:px-6 xl:rounded-md xl:py-2 2xl:text-xl 2xl:rounded-lg">
@@ -42,10 +41,10 @@ export const HeroSection: React.FC = () => {
                     </div>
 
                     <div className="text-black font-anton flex-1">
-                        <h4 className="md:text-lg lg:text-xl xl:text-2xl">Demo Video</h4>
+                        <h4 className="md:text-lg lg:text-xl xl:text-2xl">Watch the magic happen!</h4>
                         <div className="w-full md:w-[90%] xl:w-[60%]">
                             <p className="font-inter font-normal text-xs leading-normal mt-1 md:text-sm md:leading-relaxed xl:text-base 2xl:text-lg 2xl:mt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                            See our AI agents in action, transforming your workflows with precision and speed.
                             </p>
                         </div>
                     </div>

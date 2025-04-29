@@ -11,14 +11,6 @@ export const menuItems: MenuItem[] = [
     },
     {
         link: '#',
-        title: 'Features',
-    },
-    {
-        link: '#',
-        title: 'Contact',
-    },
-    {
-        link: '#',
         title: 'Launch App',
     },
 ];
