@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { HowCommandHiveWorks } from './components/HowCommandHiveWorks';
+import { Partners } from './components/Partners';
 import { UserReviews } from './components/UserReviews';
 
 const App: React.FC = () => {
@@ -12,6 +13,7 @@ const App: React.FC = () => {
         <main className="w-screen min-h-screen relative">
             <Header />
             <HeroSection />
+            <Partners />
             <HowCommandHiveWorks />
             <Features />
             <UserReviews />
