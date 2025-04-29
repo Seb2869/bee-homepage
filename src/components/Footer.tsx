@@ -2,6 +2,7 @@ import React from 'react';
 import { BiLogoDiscordAlt, BiLogoFacebookCircle, BiLogoInstagramAlt, BiLogoLinkedinSquare } from 'react-icons/bi';
 
 import Logo from '../assets/logo.webp';
+import { menuItems } from '../constants/common.constants';
 
 export const Footer: React.FC = () => {
     return (
@@ -19,26 +20,21 @@ export const Footer: React.FC = () => {
                         </span>
                     </div>
                     <p className="font-inter font-normal text-center text-xs leading-normal md:text-sm md:leading-relaxed lg:px-40 xl:text-base xl:px-56 2xl:text-lg 2xl:px-80">
-                        <strong>Disclaimer:</strong> Command Hive’s AI agents are designed to enhance efficiency but rely on user-defined prompts. Results depend on configuration and market conditions. Always review settings and monitor performance.
-
-
+                        <strong>Disclaimer:</strong> Command Hive’s AI agents are designed to enhance efficiency but
+                        rely on user-defined prompts. Results depend on configuration and market conditions. Always
+                        review settings and monitor performance.
                     </p>
                 </div>
                 <button className="w-fit mx-auto flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] mt-5 md:mt-7 md:text-base md:gap-x-1 xl:text-lg xl:mt-8 xl:px-4 xl:rounded-md xl:py-2 2xl:text-xl 2xl:mt-10 2xl:rounded-lg">
                     <BiLogoDiscordAlt className="text-2xl md:text-3xl 2xl:text-4xl" />
                     <span>Join Our Discord</span>
                 </button>
-                <div className="grid grid-cols-1 border-b border-b-white border-opacity-30 text-sm font-anton text-center gap-y-2 py-5 md:grid-cols-5 md:gap-y-0 md:py-7 md:text-base xl:py-10 xl:text-xl 2xl:py-12 2xl:text-2xl">
-                    <span>
-                        <a href="">Home</a>
-                    </span>
-                    <span>
-                        <a href="">About Us</a>
-                    </span>
-                    
-                    <span>
-                        <a href="">Launch App</a>
-                    </span>
+                <div className="grid grid-cols-1 border-b border-b-white border-opacity-30 text-sm font-anton text-center gap-y-2 py-5 md:grid-cols-3 md:gap-y-0 md:py-7 md:text-base xl:py-10 xl:text-xl 2xl:py-12 2xl:text-2xl">
+                    {menuItems.map((item, index) => (
+                        <span key={index}>
+                            <a href={item.link}>{item.title}</a>
+                        </span>
+                    ))}
                 </div>
                 <div className="flex flex-col py-2 md:flex-row md:justify-between md:items-center">
                     <span className="text-xs">All rights reserved. Command Hive</span>

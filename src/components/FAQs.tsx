@@ -12,24 +12,24 @@ type Question = {
 
 export const FAQs: React.FC = () => {
     const questions: Question[] = [
-        {
-            question: 'Do you store private key?',
-            description:
-                'Each agent has its own wallet, if you are building an AI agent that trades, just send funds to the agent address.',
+            {
+                question: 'Do you store private key',
+                description:
+                    'Each agent has its own wallet, if you are building an AI agent that trades, just send funds to the agent address.',
             },
             {
-                question: 'How do Command Hive agents stay ahead of trends?',
+                question: 'How do Command Hive agents stay ahead of trends',
                 description:
                     'Our agents tap into Polymarket’s MCP to monitor news and trends in real time, ensuring they act on the latest insights for trading or betting.',
             },
             {
-                question: 'Which tools do your agents connect with?',
+                question: 'Which tools do your agents connect with',
                 description:
                     'Our Worker Bees integrate with platforms like GitHub, Quickswap, Uniswap, Polymarket, and more via MCPs.  ',
             },
-            
+
             {
-                question: 'Is Command Hive secure?',
+                question: 'Is Command Hive secure',
                 description:
                     'We prioritize security with encrypted protocols and robust safeguards to protect your data and transactions.',
             },
@@ -51,9 +51,6 @@ export const FAQs: React.FC = () => {
                         Frequently Asked Questions
                         <span className="text-primary">.</span>
                     </h2>
-                    <p className="font-inter font-normal text-xs leading-normal mt-3 md:mt-4 md:text-sm md:leading-relaxed xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-6">
-                       
-                    </p>
                     <div className="mt-8 flex flex-col gap-y-3 md:mt-10 lg:gap-y-4 xl:mt-14 xl:gap-y-5 2xl:mt-16 2xl:gap-y-6">
                         {questions.map((item, index) => (
                             <div

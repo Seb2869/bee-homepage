@@ -9,18 +9,20 @@ type ProcessStep = {
 };
 
 export const HowCommandHiveWorks: React.FC = () => {
-    const description: string = "Think of Command Hive as a buzzing colony with two key players: the Queen Bee and Worker Bees."
-    const processSteps: ProcessStep[] = [
-        {
-            title: 'Queen Bee',
-            description:
-                "Your 24/7 command center. Set recurring prompts, and the Queen Bee directs Worker Bees to act on your schedule—day or night.",
-        },
-        {
-            title: 'Worker Bees',
-            description: "These goal-driven agents take orders from the Queen Bee, connecting to your tools via MCPs to complete tasks, from- trading, automating workflows, placing bids and more"
-        }
-    ];
+    const description: string =
+            'Think of Command Hive as a buzzing colony with two key players: the Queen Bee and Worker Bees.',
+        processSteps: ProcessStep[] = [
+            {
+                title: 'Queen Bee',
+                description:
+                    'Your 24/7 command center. Set recurring prompts, and the Queen Bee directs Worker Bees to act on your schedule—day or night.',
+            },
+            {
+                title: 'Worker Bees',
+                description:
+                    'These goal-driven agents take orders from the Queen Bee, connecting to your tools via MCPs to complete tasks, from- trading, automating workflows, placing bids and more',
+            },
+        ];
 
     return (
         <section className="w-full text-black bg-offWhite">
@@ -38,7 +40,7 @@ export const HowCommandHiveWorks: React.FC = () => {
                         <span className="text-primary">?</span>
                     </h2>
                     <p className="font-inter font-normal text-xs leading-normal md:text-sm md:leading-relaxed xl:text-base 2xl:text-lg">
-                       {description}
+                        {description}
                     </p>
                     {processSteps.map((step, index) => (
                         <div
