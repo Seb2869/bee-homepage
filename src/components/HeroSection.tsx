@@ -3,11 +3,14 @@ import React from 'react';
 import { BiPlay } from 'react-icons/bi';
 import Thumbnail from '../assets/hero/thumbnail.webp';
 import ChevronRight from '../assets/icons/Chevron_Right.svg';
+import { HexagonGrid } from './HexagonGrid';
 
 export const HeroSection: React.FC = () => {
     return (
         <section className="w-full relative bg-black text-white">
-            <div className="w-full max-w-screen-xl mx-auto px-4 pt-28 pb-48 md:px-6 md:pb-32 md:pt-36 lg:px-8 lg:pb-36 lg:pt-36 xl:pb-52 xl:pt-52">
+            <HexagonGrid />
+
+            <div className="z-20 relative pointer-events-none w-full max-w-screen-xl mx-auto px-4 pt-28 pb-48 md:px-6 md:pb-32 md:pt-36 lg:px-8 lg:pb-36 lg:pt-36 xl:pb-52 xl:pt-52">
                 <div className="w-full">
                     <h1 className="font-anton text-3xl tracking-[0.02rem] md:leading-[1.35] lg:text-5xl lg:leading-tight xl:text-7xl xl:leading-[1.15] xl:tracking-[0.120rem] 2xl:text-[80px]">
                         Command reliable <br />
@@ -20,7 +23,7 @@ export const HeroSection: React.FC = () => {
                             that autonomously integrate with tools you love.
                         </p>
                     </div>
-                    <button className="w-fit mt-4 flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] md:text-base md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:text-lg xl:px-6 xl:rounded-md xl:py-2 2xl:text-xl 2xl:rounded-lg">
+                    <button className="w-fit pointer-events-auto mt-4 flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] md:text-base md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:text-lg xl:px-6 xl:rounded-md xl:py-2 2xl:text-xl 2xl:rounded-lg">
                         <span>LAUNCH APP</span>
                         <img
                             src={ChevronRight}
@@ -31,7 +34,7 @@ export const HeroSection: React.FC = () => {
                 </div>
             </div>
 
-            <div className="absolute bottom-0 right-0 w-full bg-primary px-3 pt-3 header-launch-app-button md:w-4/6 md:px-4 lg:w-1/2 xl:w-[55%] xl:px-6 xl:pt-6">
+            <div className="z-20 pointer-events-none absolute bottom-0 right-0 w-full bg-primary px-3 pt-3 header-launch-app-button md:w-4/6 md:px-4 lg:w-1/2 xl:w-[55%] xl:px-6 xl:pt-6">
                 <div className="header-launch-app-button flex w-full items-center gap-x-3 md:gap-x-4 xl:gap-x-5">
                     <div className="relative">
                         <img
