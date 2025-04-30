@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { BiPlay } from 'react-icons/bi';
 import Thumbnail from '../assets/hero/thumbnail.webp';
 import ChevronRight from '../assets/icons/Chevron_Right.svg';
 import { HexagonGrid } from './HexagonGrid';
+import { VideoModal } from './VideoModal';
 
 export const HeroSection: React.FC = () => {
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
     return (
         <section className="w-full relative bg-black text-white">
-            <HexagonGrid />
+            <HexagonGrid disableMouseMovement={isVideoModalOpen} />
+
+            <VideoModal
+                isOpen={isVideoModalOpen}
+                onClose={() => setIsVideoModalOpen(false)}
+            />
 
             <div className="z-20 relative pointer-events-none w-full max-w-screen-xl mx-auto px-4 pt-28 pb-48 md:px-6 md:pb-32 md:pt-36 lg:px-8 lg:pb-36 lg:pt-36 xl:pb-52 xl:pt-52">
                 <div className="w-full">
@@ -36,13 +44,16 @@ export const HeroSection: React.FC = () => {
 
             <div className="z-20 pointer-events-none absolute bottom-0 right-0 w-full bg-primary px-3 pt-3 header-launch-app-button md:w-4/6 md:px-4 lg:w-1/2 xl:w-[55%] xl:px-6 xl:pt-6">
                 <div className="header-launch-app-button flex w-full items-center gap-x-3 md:gap-x-4 xl:gap-x-5">
-                    <div className="relative">
+                    <div className="relative pointer-events-auto">
                         <img
                             src={Thumbnail}
                             alt="Demo Video"
                             className="w-[200px] h-[100px] object-cover rounded md:w-[240px] lg:h-[112px] lg:w-[232px] xl:h-[148px] xl:w-[340px] xl:rounded-md 2xl:w-[426px] 2xl:h-[180px] 2xl:rounded-lg"
                         />
-                        <BiPlay className="text-black absolute top-[35%] left-1/2 text-4xl cursor-pointer lg:text-5xl" />
+                        <BiPlay
+                            className="text-black absolute top-[35%] left-1/2 text-4xl cursor-pointer lg:text-5xl"
+                            onClick={() => setIsVideoModalOpen(true)}
+                        />
                     </div>
 
                     <div className="text-black font-anton flex-1">
