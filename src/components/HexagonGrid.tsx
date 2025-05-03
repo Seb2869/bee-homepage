@@ -49,7 +49,7 @@ export const HexagonGrid: React.FC<HexagonGridProps> = ({ disableMouseMovement }
 
     useEffect(() => {
         const radius = 40,
-            rippleDuration = 500;
+            rippleDuration = 300;
 
         const handleMouseMove = (e: MouseEvent) => {
             if (!bgContainerRef.current) return;

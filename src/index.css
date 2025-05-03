@@ -46,4 +46,8 @@
     .grid-gradient-background {
         background-image: linear-gradient(-135deg, #f7ad33 -30%, transparent 30%);
     }
+
+    .partners-background {
+        background-image: linear-gradient(45deg, #fafafa 40px, transparent 0px);
+    }
 }
