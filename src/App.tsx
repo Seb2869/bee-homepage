@@ -1,25 +1,31 @@
-import React from 'react';
-import { FAQs } from './components/FAQs';
-import { Features } from './components/Features';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { HeroSection } from './components/HeroSection';
-import { HowCommandHiveWorks } from './components/HowCommandHiveWorks';
-import { Partners } from './components/Partners';
-import { UserReviews } from './components/UserReviews';
+import React, { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Loading } from './components/Loading';
+import { Pages } from './constants/common.constants';
+import RootLayout from './layouts/RootLayout';
+
+const Home = lazy(() => import('./pages/Home')),
+    AboutUs = lazy(() => import('./pages/AboutUs'));
 
 const App: React.FC = () => {
     return (
-        <main className="w-screen min-h-screen relative">
-            <Header />
-            <HeroSection />
-            <Partners />
-            <HowCommandHiveWorks />
-            <Features />
-            <UserReviews />
-            <FAQs />
-            <Footer />
-        </main>
+        <Suspense fallback={<Loading />}>
+            <Routes>
+                <Route
+                    path={Pages.ROOT}
+                    element={<RootLayout />}
+                >
+                    <Route
+                        index
+                        element={<Home />}
+                    />
+                    <Route
+                        path={Pages.ABOUT_US}
+                        element={<AboutUs />}
+                    />
+                </Route>
+            </Routes>
+        </Suspense>
     );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import User1 from '../assets/user-reviews/user1.svg';
-import User2 from '../assets/user-reviews/user2.svg';
-import User3 from '../assets/user-reviews/user3.svg';
+import User1 from '../../assets/user-reviews/user1.svg';
+import User2 from '../../assets/user-reviews/user2.svg';
+import User3 from '../../assets/user-reviews/user3.svg';
 
 type UserReview = {
     name: string;

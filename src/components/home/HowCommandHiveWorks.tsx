@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Bee from '../assets/how-commandhive-wroks/bee.webp';
-import Logo from '../assets/logo.webp';
+import Bee from '../../assets/how-commandhive-wroks/bee.webp';
+import Logo from '../../assets/logo.webp';
 
 type ProcessStep = {
     title: string;

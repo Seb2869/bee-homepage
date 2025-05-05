@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Feature1 from '../assets/features/feature1.webp';
-import Feature2 from '../assets/features/feature2.webp';
-import Feature3 from '../assets/features/feature3.webp';
+import Feature1 from '../../assets/features/feature1.webp';
+import Feature2 from '../../assets/features/feature2.webp';
+import Feature3 from '../../assets/features/feature3.webp';
 
 type Feature = {
     title: string;

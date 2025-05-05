@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 import { BiPlay } from 'react-icons/bi';
-import Thumbnail from '../assets/hero/thumbnail.webp';
-import ChevronRight from '../assets/icons/Chevron_Right.svg';
-import { HexagonGrid } from './HexagonGrid';
+import Thumbnail from '../../../assets/hero/thumbnail.webp';
+import ChevronRight from '../../../assets/icons/Chevron_Right.svg';
+import { LAUNCH_APP_URL } from '../../../constants/common.constants';
+import { HexagonGrid } from '../../HexagonGrid';
 import { VideoModal } from './VideoModal';
 
 export const HeroSection: React.FC = () => {
@@ -31,14 +32,18 @@ export const HeroSection: React.FC = () => {
                             that autonomously integrate with tools you love.
                         </p>
                     </div>
-                    <button className="w-fit pointer-events-auto mt-4 flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] md:text-base md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:text-lg xl:px-6 xl:rounded-md xl:py-2 2xl:text-xl 2xl:rounded-lg">
+                    <a
+                        href={LAUNCH_APP_URL}
+                        target="_blank"
+                        className="w-fit pointer-events-auto mt-4 flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] md:text-base md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:text-lg xl:px-6 xl:rounded-md xl:py-2 2xl:text-xl 2xl:rounded-lg"
+                    >
                         <span>LAUNCH APP</span>
                         <img
                             src={ChevronRight}
                             alt="Chevron Right"
                             className="w-[14px] md:w-4 lg:w-[18px] xl:w-5"
                         />
-                    </button>
+                    </a>
                 </div>
             </div>
 

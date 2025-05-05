@@ -31,7 +31,7 @@ export const HexagonGrid: React.FC<HexagonGridProps> = ({ disableMouseMovement }
             const isOdd = row % 2 === 1,
                 offsetX = isOdd ? -horizontalSpacing / 2 : 0;
 
-            for (let col = 0; col < columns; col++) {
+            for (let col = 0; col < (isOdd ? columns + 1 : columns); col++) {
                 const x = col * horizontalSpacing + offsetX,
                     y = row * verticalSpacing;
                 newGrid.push({ x, y });
