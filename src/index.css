@@ -19,19 +19,15 @@
 }
 
 @layer utilities {
-    .footer-top-left-sharp-edge-rectangle {
+    .top-left-sharp-edge-rectangle {
         background-image: linear-gradient(135deg, #fafafa 40px, transparent 0px);
     }
 
-    .features-bottom-right-sharp-edge-rectangle {
+    .bottom-right-sharp-edge-rectangle {
         background-image: linear-gradient(-135deg, #fafafa 40px, transparent 0px);
     }
 
-    .user-profile-picture {
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    }
-
-    .header-launch-app-button {
+    .angled-left-rectangle {
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 
@@ -43,11 +39,56 @@
         clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
     }
 
-    .grid-gradient-background {
+    .hexagon-grid-gradient {
         background-image: linear-gradient(-135deg, #f7ad33 -30%, transparent 30%);
     }
 
-    .partners-background {
+    .bottom-left-sharp-edge-rectangle {
         background-image: linear-gradient(45deg, #fafafa 40px, transparent 0px);
+    }
+
+    .app-container,
+    .section-container {
+        @apply w-full max-w-screen-xl mx-auto px-4 py-7 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 2xl:py-16;
+    }
+
+    .btn-primary {
+        @apply w-fit bg-primary text-black font-anton text-sm px-3 py-1 rounded mt-5 md:text-base xl:text-lg xl:px-4 xl:rounded-md xl:py-2 2xl:text-xl 2xl:rounded-lg;
+    }
+
+    .section-container {
+        @apply flex flex-col gap-y-3 md:flex-row md:items-start;
+    }
+
+    .section-body {
+        @apply font-inter text-xs leading-normal md:text-sm md:leading-relaxed xl:text-base 2xl:text-lg;
+    }
+
+    .section-heading {
+        @apply font-anton text-xl md:text-[22px] lg:text-2xl xl:text-4xl 2xl:text-5xl;
+    }
+
+    .section-subheading {
+        @apply font-anton font-normal leading-3 text-base md:text-lg xl:text-xl 2xl:text-2xl;
+    }
+
+    .outlined-card {
+        @apply bg-white border border-[#000000] border-opacity-15 rounded p-4 lg:p-5 xl:rounded-md 2xl:rounded-lg 2xl:p-6;
+    }
+
+    .section-image-wrapper {
+        @apply w-full flex justify-center md:w-1/2 md:items-start md:justify-start;
+    }
+
+    .section-image {
+        @apply w-1/2 md:w-3/4;
+    }
+
+    .section-body-container {
+        @apply w-full flex flex-col gap-y-3 md:w-1/2 md:gap-y-4 xl:gap-y-5 2xl:gap-y-6;
+    }
+
+    .main-title {
+        @apply font-anton text-3xl tracking-[0.02rem] md:leading-[1.35] lg:text-5xl lg:leading-tight xl:text-7xl xl:leading-[1.15] xl:tracking-[0.120rem] 2xl:text-[80px];
     }
 }

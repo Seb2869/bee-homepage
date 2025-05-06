@@ -31,17 +31,17 @@ export const Footer: React.FC = () => {
     ];
 
     return (
-        <footer className="bg-black footer-top-left-sharp-edge-rectangle text-white w-full">
-            <div className="w-full max-w-screen-xl mx-auto px-4 pt-7 md:px-6 md:pt-8 lg:px-8 lg:pt-10 xl:pt-14 2xl:pt-16">
+        <footer className="bg-black top-left-sharp-edge-rectangle text-white w-full">
+            <div className="app-container !pb-0 pt-7 md:pt-8 md:pb-0 lg:pt-10 lg:pb-0 xl:pt-14 2xl:pt-16">
                 <div className="flex flex-col items-center justify-center gap-y-2 md:gap-y-3 2xl:gap-y-4">
                     <AppLogo />
-                    <p className="font-inter font-normal text-center text-xs leading-normal md:text-sm md:leading-relaxed lg:px-40 xl:text-base xl:px-56 2xl:text-lg 2xl:px-80">
+                    <p className="section-body text-center lg:px-40 xl:px-56 2xl:px-80">
                         <strong>Disclaimer:</strong> Command Hive’s AI agents are designed to enhance efficiency but
                         rely on user-defined prompts. Results depend on configuration and market conditions. Always
                         review settings and monitor performance.
                     </p>
                 </div>
-                <button className="w-fit mx-auto flex items-center bg-primary text-black font-anton text-sm px-3 py-1 rounded gap-x-[3px] mt-5 md:mt-7 md:text-base md:gap-x-1 xl:text-lg xl:mt-8 xl:px-4 xl:rounded-md xl:py-2 2xl:text-xl 2xl:mt-10 2xl:rounded-lg">
+                <button className="btn-primary mx-auto flex items-center gap-x-[3px] mt-5 md:mt-7 md:gap-x-1 xl:mt-8 2xl:mt-10">
                     <BiLogoDiscordAlt className="text-2xl md:text-3xl 2xl:text-4xl" />
                     <span>Join Our Discord</span>
                 </button>

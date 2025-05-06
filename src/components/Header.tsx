@@ -87,7 +87,7 @@ export const Header: React.FC = () => {
                 <a
                     href={LAUNCH_APP_URL}
                     target="_blank"
-                    className="bg-primary h-fit rounded text-black font-anton header-launch-app-button text-base py-1 pr-3 pl-10 lg:py-[6px] lg:pr-4 xl:pr-8 xl:pl-16 xl:rounded-md xl:py-2 xl:text-lg 2xl:rounded-lg 2xl:text-xl"
+                    className="bg-primary h-fit rounded text-black font-anton angled-left-rectangle text-base py-1 pr-3 pl-10 lg:py-[6px] lg:pr-4 xl:pr-8 xl:pl-16 xl:rounded-md xl:py-2 xl:text-lg 2xl:rounded-lg 2xl:text-xl"
                 >
                     LAUNCH APP
                 </a>

@@ -120,7 +120,7 @@ export const HexagonGrid: React.FC<HexagonGridProps> = ({ disableMouseMovement }
             ref={bgContainerRef}
             className="z-10 absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-auto"
         >
-            <div className="pointer-events-none absolute top-0 left-0 w-full h-full grid-gradient-background z-[15]" />
+            <div className="pointer-events-none absolute top-0 left-0 w-full h-full hexagon-grid-gradient z-[15]" />
             <div className="pointer-events-auto absolute top-0 left-0 w-full h-full z-10">
                 {bgGrid.map((item, index) => (
                     <div
