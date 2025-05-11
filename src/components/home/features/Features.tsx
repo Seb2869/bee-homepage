@@ -2,9 +2,9 @@ import React from 'react';
 import { Feature } from '../../../models/common';
 import { FeatureComponent } from './FeatureComponent';
 
-import Feature1 from '../../../assets/features/feature1.webp';
-import Feature2 from '../../../assets/features/feature2.webp';
-import Feature3 from '../../../assets/features/feature3.webp';
+import Feature1 from '../../../assets/home/features/feature1.webp';
+import Feature2 from '../../../assets/home/features/feature2.webp';
+import Feature3 from '../../../assets/home/features/feature3.webp';
 
 export const Features: React.FC = () => {
     const features: Feature[] = [
@@ -29,7 +29,7 @@ export const Features: React.FC = () => {
     ];
 
     return (
-        <section className="text-white bg-black bottom-right-sharp-edge-rectangle">
+        <section className="text-white bg-black top-right-sharp-edge-rectangle">
             <div className="app-container flex flex-col md:flex-col gap-y-14 2xl:gap-y-16">
                 {features.map((feature, index) => (
                     <FeatureComponent

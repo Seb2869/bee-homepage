@@ -31,3 +31,7 @@ export const menuItems: MenuItem[] = [
         isOutsideLink: true,
     },
 ];
+
+// TODO: Vaibhav Maheshwari Please update this
+export const ZAPPER_ID = '0x86b06319b906e61631f7edbe5a3fe2edb95a3fae';
+export const ZAPPER_URL = '';

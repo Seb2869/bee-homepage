@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Partner1 from '../../assets/partners/partner1.svg';
-import Partner2 from '../../assets/partners/partner2.svg';
-import Partner3 from '../../assets/partners/partner3.svg';
-import Partner4 from '../../assets/partners/partner4.svg';
-import Partner5 from '../../assets/partners/partner5.svg';
+import Partner1 from '../../assets/home/partners/partner1.svg';
+import Partner2 from '../../assets/home/partners/partner2.svg';
+import Partner3 from '../../assets/home/partners/partner3.svg';
+import Partner4 from '../../assets/home/partners/partner4.svg';
+import Partner5 from '../../assets/home/partners/partner5.svg';
 
 type Partner = {
     id: number;

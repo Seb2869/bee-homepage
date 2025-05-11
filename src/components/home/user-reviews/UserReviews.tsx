@@ -1,10 +1,10 @@
 import React from 'react';
 import { UserReview } from '../../../models/common';
-
-import User1 from '../../../assets/user-reviews/user1.svg';
-import User2 from '../../../assets/user-reviews/user2.svg';
-import User3 from '../../../assets/user-reviews/user3.svg';
 import { UserReviewCard } from './UserReviewCard';
+
+import User1 from '../../../assets/home/user-reviews/user1.svg';
+import User2 from '../../../assets/home/user-reviews/user2.svg';
+import User3 from '../../../assets/home/user-reviews/user3.svg';
 
 export const UserReviews: React.FC = () => {
     const reviews: UserReview[] = [

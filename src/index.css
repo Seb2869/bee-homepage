@@ -23,8 +23,12 @@
         background-image: linear-gradient(135deg, #fafafa 40px, transparent 0px);
     }
 
-    .bottom-right-sharp-edge-rectangle {
+    .top-right-sharp-edge-rectangle {
         background-image: linear-gradient(-135deg, #fafafa 40px, transparent 0px);
+    }
+
+    .bottom-right-sharp-edge-rectangle {
+        background-image: linear-gradient(-45deg, #fafafa 40px, transparent 0px);
     }
 
     .angled-left-rectangle {
@@ -90,5 +94,21 @@
 
     .main-title {
         @apply font-anton text-3xl tracking-[0.02rem] md:leading-[1.35] lg:text-5xl lg:leading-tight xl:text-7xl xl:leading-[1.15] xl:tracking-[0.120rem] 2xl:text-[80px];
+    }
+
+    .light-gray-rounded-card {
+        @apply w-full flex items-center justify-between bg-[#F5F5F5] rounded p-2 md:p-3 2xl:p-4;
+    }
+
+    .light-gray-rounded-card-heading {
+        @apply font-semibold text-[10px] leading-normal md:text-xs md:leading-relaxed xl:text-sm 2xl:text-base;
+    }
+
+    .light-gray-rounded-card-body {
+        @apply text-[8px] leading-normal md:text-[10px] md:leading-relaxed xl:text-xs 2xl:text-sm;
+    }
+
+    .roadmap-dot {
+        @apply w-4 h-4 rounded-full absolute z-[5] md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8;
     }
 }

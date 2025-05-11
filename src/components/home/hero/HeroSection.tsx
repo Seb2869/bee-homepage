@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-
 import { BiPlay } from 'react-icons/bi';
-import Thumbnail from '../../../assets/hero/thumbnail.webp';
-import ChevronRight from '../../../assets/icons/Chevron_Right.svg';
 import { LAUNCH_APP_URL } from '../../../constants/common.constants';
 import { HexagonGrid } from '../../HexagonGrid';
 import { VideoModal } from './VideoModal';
+
+import Thumbnail from '../../../assets/home/hero/thumbnail.webp';
+import ChevronRight from '../../../assets/icons/Chevron_Right.svg';
 
 export const HeroSection: React.FC = () => {
     const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProcessStepCard } from './ProcessStepCard';
 
-import Bee from '../../../assets/how-commandhive-wroks/bee.webp';
+import Bee from '../../../assets/home/how-commandhive-wroks/bee.webp';
 
 type ProcessStep = {
     title: string;
