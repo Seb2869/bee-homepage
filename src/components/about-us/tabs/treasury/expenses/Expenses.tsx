@@ -13,14 +13,14 @@ export const Expenses: React.FC = () => {
                     <p className="section-body hidden md:block md:mt-1 xl:mt-2">
                         Here’s how we allocate your contributions to make a meaningful impact:
                     </p>
-                    <div className="flex flex-col gap-y-1 mt-4 lg:gap-y-2 xl:gap-y-3">
+                    <div className="flex flex-col gap-y-1 mt-4 lg:gap-y-2 lg:mt-6">
                         {FUNDS.expenses.map((fund, index) => (
                             <div
                                 key={index}
                                 className="flex items-center gap-x-1 lg:gap-x-2 xl:gap-x-3"
                             >
                                 <div
-                                    className="w-3 h-3 rounded-full xl:w-4 xl:h-4"
+                                    className="w-3 h-3 rounded-full 2xl:w-4 2xl:h-4"
                                     style={{ backgroundColor: fund.color }}
                                 ></div>
                                 <div className="section-body">{fund.type}</div>

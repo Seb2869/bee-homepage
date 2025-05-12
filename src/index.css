@@ -53,7 +53,7 @@
 
     .app-container,
     .section-container {
-        @apply w-full max-w-screen-xl mx-auto px-4 py-7 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 2xl:py-16;
+        @apply w-full max-w-[1880px] mx-auto px-4 py-7 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 xl:px-32 2xl:py-16;
     }
 
     .btn-primary {

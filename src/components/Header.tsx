@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
 
     return (
         <header className="w-full fixed top-0 left-0 text-black z-50">
-            <div className="relative flex items-center justify-between bg-white border-b border-b-[#000000] border-opacity-15 w-full max-w-screen-xl mx-auto px-4 py-2 md:px-6 lg:hidden">
+            <div className="relative flex items-center justify-between bg-white border-b border-b-[#000000] border-opacity-15 w-full max-w-screen-2xl mx-auto px-4 py-2 md:px-6 lg:hidden">
                 <AppLogo />
                 <BiMenu
                     size={26}
@@ -58,12 +58,12 @@ export const Header: React.FC = () => {
                 )}
             </AnimatePresence>
 
-            <div className="hidden relative w-full max-w-screen-xl mx-auto px-6 lg:flex lg:justify-between lg:items-end lg:gap-x-4 lg:px-8 xl:gap-x-5">
+            <div className="hidden relative w-full max-w-[1800px] mx-auto px-6 lg:flex lg:justify-between lg:items-end lg:gap-x-4 lg:px-8 xl:gap-x-5 xl:px-32">
                 <div
                     id="navbar"
                     className="bg-white flex-1 flex relative items-center justify-between"
                 >
-                    <div className="bg-white h-full w-[400px] absolute right-full"></div>
+                    <div className="bg-white h-full w-1/2 absolute right-full"></div>
                     <AppLogo />
                     <nav className="z-10 flex items-center gap-x-8 py-3 pr-6 xl:gap-x-12 xl:py-4 xl:pr-12">
                         {menuItems.slice(0, menuItems.length - 1).map((item, index) => (
