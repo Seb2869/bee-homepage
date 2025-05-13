@@ -75,23 +75,6 @@ export const TeamTab: React.FC = () => {
             ],
         },
         {
-            name: 'Prince Dalsaniya',
-            position: 'Tech Lead',
-            image: Prince,
-            description:
-                'Ahmedabad University Alumni, 3+ years Web2 full stack Dev Part time on Kleo for last 2 months.',
-            socialLinks: [
-                {
-                    platform: SocialPlatform.LINKEDIN,
-                    url: 'https://www.linkedin.com/in/prince-dalsaniya-256b031a1/',
-                },
-                {
-                    platform: SocialPlatform.PORTFOLIO,
-                    url: 'https://princedalsaniya.vercel.app/',
-                },
-            ],
-        },
-        {
             name: 'Jainam Shah',
             position: 'Frontend Engineer',
             image: Jainam,

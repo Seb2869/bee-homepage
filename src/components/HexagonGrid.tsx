@@ -131,7 +131,7 @@ export const HexagonGrid: React.FC<HexagonGridProps> = ({ disableMouseMovement }
                         <div className="inner-hexagon hexagon-shape w-full h-full bg-black box-border">
                             <div
                                 className={`hover-outer-hexagon hexagon-shape w-full h-full bg-primary p-[2px] transition-all duration-500 ease-in-out hidden xl:inline-block ${
-                                    isActive(index) ? 'opacity-100' : 'opacity-0'
+                                    isActive(index) ? 'opacity-50' : 'opacity-0'
                                 }`}
                             >
                                 <div className="hover-hexagon hexagon-shape w-full h-full bg-black p-[5px]">

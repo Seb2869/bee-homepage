@@ -15,12 +15,12 @@ export const HowCommandHiveWorks: React.FC = () => {
             {
                 title: 'Queen Bee',
                 description:
-                    'Your 24/7 command center. Set recurring prompts, and the Queen Bee directs Worker Bees to act on your schedule—day or night.',
+                    'Your 24/7 command center. Set recurring prompts, and the Queen Bee directs Worker Bees to act on your schedule, day or night.',
             },
             {
                 title: 'Worker Bees',
                 description:
-                    'These goal-driven agents take orders from the Queen Bee, connecting to your tools via MCPs to complete tasks, from- trading, automating workflows, placing bids and more',
+                    'These goal-driven agents take orders from the Queen Bee, connecting to your tools via MCPs to complete tasks, ranging from trading, automating workflows, placing bids and more',
             },
         ];
 
