@@ -34,8 +34,14 @@ export const AboutHero: React.FC = () => {
                 <div className="flex-1">
                     <h1 className="main-title">About Us</h1>
                     <p className="section-body mt-2 md:mt-3 lg:mt-4 xl:mt-5 xl:w-[80%] 2xl:mt-6">
-We are a small team of 5 people, based majorly out of India and USA. We are also the team behind. We are also the team behind {" "}
-<a href="https://kleo.network" className="pointer-events-auto hover:underline">Kleo Network.</a>
+                        We are a small team of 5 people, based majorly out of India and USA. We are also the team behind{' '}
+                        <a
+                            href="https://kleo.network"
+                            target="_blank"
+                            className="pointer-events-auto hover:underline"
+                        >
+                            Kleo Network.
+                        </a>
                     </p>
                     <div className="mt-4 grid grid-cols-1 gap-y-4 md:mt-5 md:grid-cols-3 md:gap-x-4 lg:mt-5 lg:gap-x-5 xl:mt-8 2xl:mt-10">
                         {aboutStatsItems.map((item, index) => (

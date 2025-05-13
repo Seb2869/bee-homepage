@@ -11,8 +11,7 @@ export const HowItWorks: React.FC = () => {
         {
             icon: Step1,
             title: 'Round the Clock Agent',
-            description:
-                'CommandHive agents run round the clock triggered by invocation based on time or criteria.',
+            description: 'CommandHive agents run round the clock triggered by invocation based on time or criteria.',
         },
         {
             icon: Step2,
@@ -32,7 +31,8 @@ export const HowItWorks: React.FC = () => {
         <section className="app-container flex flex-col items-center">
             <h2 className="section-heading">How It Works</h2>
             <p className="section-body text-center mt-2 lg:w-4/5 xl:w-3/5 xl:mt-3">
-            CommandHive allows agents to work round the clock, connected to favourite tools Model Context Protcols where you have complete control and ownership of the AI agent. 
+                CommandHive allows agents to work round the clock, connected to favourite tools Model Context Protcols
+                where you have complete control and ownership of the AI agent.
             </p>
             <div className="w-full grid grid-cols-1 mt-6 gap-y-4 lg:grid-cols-3 lg:gap-x-5 xl:mt-10 2xl:gap-x-6">
                 {workingProcessSteps.map((step, index) => (

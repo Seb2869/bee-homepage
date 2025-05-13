@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
                 )}
             </AnimatePresence>
 
-            <div className="hidden relative w-full max-w-[1800px] mx-auto px-6 lg:flex lg:justify-between lg:items-end lg:gap-x-4 lg:px-8 xl:gap-x-5 xl:px-32">
+            <div className="hidden relative w-full max-w-[1880px] mx-auto px-6 lg:flex lg:justify-between lg:items-end lg:gap-x-4 lg:px-8 xl:gap-x-5 xl:px-32">
                 <div
                     id="navbar"
                     className="bg-white flex-1 flex relative items-center justify-between"

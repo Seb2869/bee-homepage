@@ -19,7 +19,8 @@ export const RoadmapTab: React.FC = () => {
         {
             date: 'July 2025',
             title: 'MCP Hackathon',
-            description: 'Conduct a Model Context Protocol Hackathon for specific use cases and new creative ideas as well.',
+            description:
+                'Conduct a Model Context Protocol Hackathon for specific use cases and new creative ideas as well.',
             isCompleted: false,
         },
         {

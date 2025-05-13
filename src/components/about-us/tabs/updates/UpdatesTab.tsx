@@ -3,11 +3,11 @@ import { Update, UpdateItemType } from '../../../../models/common';
 import { UpdateWrapper } from './UpdateWrapper';
 import { UpdateItems } from './items/UpdateItems';
 
-import Downloads from '../../../../assets/about-us/updates/downloads.svg';
-import TargetHit from '../../../../assets/about-us/updates/target_hit.svg';
-import Treasury from '../../../../assets/about-us/updates/treasury.svg';
+// import Downloads from '../../../../assets/about-us/updates/downloads.svg';
+// import TargetHit from '../../../../assets/about-us/updates/target_hit.svg';
+// import Treasury from '../../../../assets/about-us/updates/treasury.svg';
 import TrendingUp from '../../../../assets/about-us/updates/trending_up.svg';
-import X from '../../../../assets/about-us/updates/x.svg';
+// import X from '../../../../assets/about-us/updates/x.svg';
 
 export const UpdatesTab: React.FC = () => {
     const updatesData: Update[] = [
