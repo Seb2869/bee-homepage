@@ -12,80 +12,7 @@ import X from '../../../../assets/about-us/updates/x.svg';
 export const UpdatesTab: React.FC = () => {
     const updatesData: Update[] = [
         {
-            date: 'November 4th, 2024',
-            items: [
-                {
-                    type: UpdateItemType.LIST,
-                    title: 'SDK End Goals:',
-                    icon: TargetHit,
-                    points: [
-                        {
-                            id: 1,
-                            text: 'Pooling data to build novel AI models',
-                        },
-                        {
-                            id: 2,
-                            text: 'Building hyper-personalized user experiences',
-                        },
-                        {
-                            id: 3,
-                            text: 'Creating use cases for research data sales',
-                        },
-                    ],
-                },
-                {
-                    type: UpdateItemType.LIST,
-                    title: 'Highlights:',
-                    icon: TrendingUp,
-                    points: [
-                        {
-                            id: 1,
-                            text: 'Surpassed 10,000+ extension downloads',
-                        },
-                        {
-                            id: 2,
-                            text: 'Successfully managed community during server issues',
-                        },
-                        {
-                            id: 3,
-                            text: 'Preparing for Devcon in Bangkok (Nov 6-11)',
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-            date: 'October 22nd, 2024',
-            items: [
-                {
-                    type: UpdateItemType.CARDS,
-                    title: 'Highlights:',
-                    cards: [
-                        {
-                            icon: Downloads,
-                            title: 'Agents Created',
-                            number: 6400,
-                            change: 25,
-                        },
-                        {
-                            icon: X,
-                            title: 'X Followers',
-                            number: 43000,
-                            change: 10,
-                        },
-                        {
-                            icon: Treasury,
-                            title: 'Grant Received',
-                            number: 24000,
-                            isCurrency: true,
-                            change: 25,
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-            date: 'October 15th, 2024',
+            date: 'May  10th, 2025',
             items: [
                 {
                     type: UpdateItemType.LIST,
@@ -109,6 +36,106 @@ export const UpdatesTab: React.FC = () => {
             ],
         },
     ];
+
+    // const updatesData: Update[] = [
+    //     {
+    //         date: 'November 4th, 2024',
+    //         items: [
+    //             {
+    //                 type: UpdateItemType.LIST,
+    //                 title: 'SDK End Goals:',
+    //                 icon: TargetHit,
+    //                 points: [
+    //                     {
+    //                         id: 1,
+    //                         text: 'Pooling data to build novel AI models',
+    //                     },
+    //                     {
+    //                         id: 2,
+    //                         text: 'Building hyper-personalized user experiences',
+    //                     },
+    //                     {
+    //                         id: 3,
+    //                         text: 'Creating use cases for research data sales',
+    //                     },
+    //                 ],
+    //             },
+    //             {
+    //                 type: UpdateItemType.LIST,
+    //                 title: 'Highlights:',
+    //                 icon: TrendingUp,
+    //                 points: [
+    //                     {
+    //                         id: 1,
+    //                         text: 'Surpassed 10,000+ extension downloads',
+    //                     },
+    //                     {
+    //                         id: 2,
+    //                         text: 'Successfully managed community during server issues',
+    //                     },
+    //                     {
+    //                         id: 3,
+    //                         text: 'Preparing for Devcon in Bangkok (Nov 6-11)',
+    //                     },
+    //                 ],
+    //             },
+    //         ],
+    //     },
+    //     {
+    //         date: 'October 22nd, 2024',
+    //         items: [
+    //             {
+    //                 type: UpdateItemType.CARDS,
+    //                 title: 'Highlights:',
+    //                 cards: [
+    //                     {
+    //                         icon: Downloads,
+    //                         title: 'Agents Created',
+    //                         number: 6400,
+    //                         change: 25,
+    //                     },
+    //                     {
+    //                         icon: X,
+    //                         title: 'X Followers',
+    //                         number: 43000,
+    //                         change: 10,
+    //                     },
+    //                     {
+    //                         icon: Treasury,
+    //                         title: 'Grant Received',
+    //                         number: 24000,
+    //                         isCurrency: true,
+    //                         change: 25,
+    //                     },
+    //                 ],
+    //             },
+    //         ],
+    //     },
+    //     {
+    //         date: 'October 15th, 2024',
+    //         items: [
+    //             {
+    //                 type: UpdateItemType.LIST,
+    //                 title: 'Highlights:',
+    //                 icon: TrendingUp,
+    //                 points: [
+    //                     {
+    //                         id: 1,
+    //                         text: 'Launched Landing Page for CommandHive',
+    //                     },
+    //                     {
+    //                         id: 2,
+    //                         text: 'Pitched at Starknet Hacker House',
+    //                     },
+    //                     {
+    //                         id: 3,
+    //                         text: 'Created  Twitter Account',
+    //                     },
+    //                 ],
+    //             },
+    //         ],
+    //     },
+    // ];
 
     return (
         <div className="app-container">

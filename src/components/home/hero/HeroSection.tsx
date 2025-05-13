@@ -22,7 +22,7 @@ export const HeroSection: React.FC = () => {
             <div className="z-20 relative pointer-events-none app-container !pt-28 !pb-48 md:!pb-32 md:!pt-36 lg:!pb-36 lg:!pt-36 xl:!pb-52 xl:!pt-52">
                 <div className="w-full">
                     <h1 className="main-title">
-                        Command reliable <br />
+                        Command reliable
                         AI agents
                         <br /> that work <span className="text-primary">24*7.</span>
                     </h1>

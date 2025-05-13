@@ -9,24 +9,24 @@ import User3 from '../../../assets/home/user-reviews/user3.svg';
 export const UserReviews: React.FC = () => {
     const reviews: UserReview[] = [
         {
-            name: 'Omar Calzoni',
-            location: 'Texas, USA',
+            name: 'Anuhya Challagundla',
+            location: 'Ecosystem, Aptos',
             profilePicture: User1,
-            review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.',
+            review: 'Vaibhav and team showed remarkable progress at Stellar Draper University Residency,  excited to see what he comes up with. They are doing amazing work with CommandHive!',
             date: '21 December 2024',
         },
         {
-            name: 'Terry Gouse',
-            location: 'Texas, USA',
+            name: 'Nirav Murthy',
+            location: 'Camp Network',
             profilePicture: User2,
-            review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            review: 'Camp Network is looking forward to launch CommandHive Agents to Camp Network powered data IP! User owned data is a mission to be accomplished together',
             date: '21 December 2024',
         },
         {
-            name: 'Lydia Dokidis',
-            location: 'Texas, USA',
+            name: 'Rehan Nek',
+            location: 'Starknet India',
             profilePicture: User3,
-            review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
+            review: 'It was an absolute pleasure to works with CommandHive Team. They have great work ethic and are willing to run through walls to ensure the outcomes are delivered.',
             date: '21 December 2024',
         },
     ];
