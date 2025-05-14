@@ -24,7 +24,7 @@ export const TeamMemberCard: React.FC<{ member: TeamMember }> = ({ member }) => 
                 />
             </div>
 
-            <div className="outlined-card -mt-12 !pt-14 z-[5] text-center flex flex-col gap-y-3 md:-mt-14 md:!pt-16 2xl:gap-y-4">
+            <div className="outlined-card -mt-12 !pt-14 z-[5] text-center flex flex-col gap-y-3 md:-mt-16 md:!pt-16 lg:-mt-14 xl:-mt-16 xl:!pt-[72px] 2xl:gap-y-4 2xl:-mt-[72px] 2xl:!pt-20">
                 <p className="section-body !text-primary !font-bold">{member.position.toUpperCase()}</p>
                 <h3 className="font-anton text-lg md:text-xl xl:text-2xl 2xl:text-3xl">{member.name}</h3>
                 <p className="section-body">{member.description}</p>

@@ -27,7 +27,7 @@ export const TreasuryStatsCard: React.FC<TreasuryStatsCardProps> = ({ index, sta
                     alt={stats.title}
                 />
             </div>
-            <div className="flex flex-col gap-y-2">
+            <div className="flex flex-col xl:gap-y-2">
                 <p className="section-body">{stats.title}</p>
                 <h3 className="section-heading">${stats.amount.toLocaleString()}</h3>
             </div>

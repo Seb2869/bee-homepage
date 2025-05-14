@@ -45,7 +45,7 @@ export const FAQs: React.FC = () => {
                         Frequently Asked Questions
                         <span className="text-primary">.</span>
                     </h2>
-                    <div className="mt-8 flex flex-col gap-y-3 md:mt-10 lg:gap-y-4 xl:mt-14 xl:gap-y-5 2xl:mt-16 2xl:gap-y-6">
+                    <div className="mt-4 flex flex-col gap-y-3 md:mt-6 lg:gap-y-4 xl:mt-8 xl:gap-y-5 2xl:mt-10 2xl:gap-y-6">
                         {questions.map((question, index) => (
                             <QuestionAccordion
                                 key={index}

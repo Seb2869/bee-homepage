@@ -21,3 +21,22 @@ export const reviewCardVariants = {
         transition: { duration: 0.2 },
     }),
 };
+
+export const accordionVariants = {
+    open: {
+        height: 'auto',
+        opacity: 1,
+        transition: {
+            duration: 0.3,
+            ease: 'easeInOut',
+        },
+    },
+    closed: {
+        height: 0,
+        opacity: 0,
+        transition: {
+            duration: 0.3,
+            ease: 'easeInOut',
+        },
+    },
+};

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { accordionVariants } from '../../constants/variants';
 import { Question } from '../../models/common';
 
 import Plus from '../../assets/icons/plus.svg';
@@ -37,12 +38,9 @@ export const QuestionAccordion: React.FC<QuestionAccordionProps> = ({
                 </button>
             </div>
             <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{
-                    height: selectedQuestion === index ? 'auto' : 0,
-                    opacity: selectedQuestion === index ? 1 : 0,
-                }}
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                variants={accordionVariants}
+                initial="closed"
+                animate={selectedQuestion === index ? 'open' : 'closed'}
                 className="overflow-hidden border-t border-t-[#000000] border-opacity-15"
             >
                 <p className="font-inter font-normal text-xs leading-normal p-4 md:text-sm md:leading-relaxed lg:p-5 xl:text-base 2xl:text-lg 2xl:p-6">
