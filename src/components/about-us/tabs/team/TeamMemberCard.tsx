@@ -15,7 +15,7 @@ export const TeamMemberCard: React.FC<{ member: TeamMember }> = ({ member }) => 
     };
 
     return (
-        <div className="relative">
+        <div className="relative h-full">
             <div className="w-full z-[6]">
                 <img
                     src={member.image}

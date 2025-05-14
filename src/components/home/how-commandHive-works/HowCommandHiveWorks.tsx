@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProcessStepCard } from './ProcessStepCard';
 
-import Bee from '../../../assets/home/how-commandhive-wroks/bee.webp';
+import Bee from '../../../assets/home/how-commandhive-wroks/bee.png';
 
 type ProcessStep = {
     title: string;
@@ -31,7 +31,7 @@ export const HowCommandHiveWorks: React.FC = () => {
                     <img
                         src={Bee}
                         alt="Bee"
-                        className="section-image"
+                        className="w-3/4 md:w-[80%]"
                     />
                 </div>
                 <div className="section-body-container">

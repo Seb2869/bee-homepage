@@ -3,7 +3,7 @@ import { UserReview } from '../../../models/common';
 import { UserReviewCard } from './UserReviewCard';
 
 import User1 from '../../../assets/home/user-reviews/user1.svg';
-import User2 from '../../../assets/home/user-reviews/user2.svg';
+import User2 from '../../../assets/home/user-reviews/user2.png';
 import User3 from '../../../assets/home/user-reviews/user3.svg';
 
 export const UserReviews: React.FC = () => {
@@ -35,7 +35,7 @@ export const UserReviews: React.FC = () => {
         <section className="w-full text-black bg-offWhite">
             <div className="app-container">
                 <h2 className="section-heading">
-                    Hear From The Users
+                    Hear From The Partners
                     <span className="text-primary">.</span>
                 </h2>
                 <div className="mt-4 grid grid-cols-1 gap-y-2 md:mt-6 md:gap-y-0 md:gap-x-2 md:grid-cols-3 lg:gap-x-4 xl:mt-10 xl:gap-x-6 2xl:mt-14 2xl:gap-x-7">

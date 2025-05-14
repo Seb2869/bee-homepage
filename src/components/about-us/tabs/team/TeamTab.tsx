@@ -89,7 +89,7 @@ export const TeamTab: React.FC = () => {
     ];
 
     return (
-        <div className="app-container grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-4 lg:gap-x-5 lg:grid-cols-3 2xl:gap-x-6">
+        <div className="app-container grid grid-cols-1 gap-y-4 content-stretch md:grid-cols-2 md:gap-x-4 lg:gap-x-5 lg:grid-cols-3 2xl:gap-x-6">
             {teamMembers.map((member, index) => (
                 <TeamMemberCard
                     key={index}
