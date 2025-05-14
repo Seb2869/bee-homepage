@@ -2,10 +2,10 @@ import React from 'react';
 import { SocialPlatform, TeamMember } from '../../../../models/common';
 import { TeamMemberCard } from './TeamMemberCard';
 
-import Jainam from '../../../../assets/about-us/team/jainam.webp';
-import Pratik from '../../../../assets/about-us/team/pratik.webp';
-import Ruchi from '../../../../assets/about-us/team/ruchi.webp';
-import Vaibhav from '../../../../assets/about-us/team/vaibhav.webp';
+import Jainam from '../../../../assets/about-us/team/jainam.png';
+// import Pratik from '../../../../assets/about-us/team/pratik.png';
+import Ruchi from '../../../../assets/about-us/team/ruchi.png';
+import Vaibhav from '../../../../assets/about-us/team/vaibhav.png';
 
 export const TeamTab: React.FC = () => {
     const teamMembers: TeamMember[] = [
@@ -26,36 +26,36 @@ export const TeamTab: React.FC = () => {
                 },
             ],
         },
-        {
-            name: 'Ujjwal Kumar',
-            position: 'Chief Technology Officer',
-            image: Vaibhav,
-            description:
-                'NIT Surat alumnus with a degree in Computer Science. 4 years of full-stack web3 development experience, and active in web3 space for last 3 years.',
-            socialLinks: [
-                {
-                    platform: SocialPlatform.LINKEDIN,
-                    url: 'https://www.linkedin.com/in/ujjwal0501/',
-                },
-            ],
-        },
-        {
-            name: 'Pratik Ostwal',
-            position: 'Growth Marketing',
-            image: Pratik,
-            description:
-                '5 years of experience in web2 marketing. Lead growth at GigIndia, Axis Bank (Freecharge) and Trianly. Full time on Kleo for last 3 months.',
-            socialLinks: [
-                {
-                    platform: SocialPlatform.LINKEDIN,
-                    url: 'https://www.linkedin.com/in/pratikostwal/',
-                },
-                {
-                    platform: SocialPlatform.PORTFOLIO,
-                    url: 'https://pratikostwal.wixsite.com/productsuccess',
-                },
-            ],
-        },
+        // {
+        //     name: 'Ujjwal Kumar',
+        //     position: 'Chief Technology Officer',
+        //     image: Vaibhav,
+        //     description:
+        //         'NIT Surat alumnus with a degree in Computer Science. 4 years of full-stack web3 development experience, and active in web3 space for last 3 years.',
+        //     socialLinks: [
+        //         {
+        //             platform: SocialPlatform.LINKEDIN,
+        //             url: 'https://www.linkedin.com/in/ujjwal0501/',
+        //         },
+        //     ],
+        // },
+        // {
+        //     name: 'Pratik Ostwal',
+        //     position: 'Growth Marketing',
+        //     image: Pratik,
+        //     description:
+        //         '5 years of experience in web2 marketing. Lead growth at GigIndia, Axis Bank (Freecharge) and Trianly. Full time on Kleo for last 3 months.',
+        //     socialLinks: [
+        //         {
+        //             platform: SocialPlatform.LINKEDIN,
+        //             url: 'https://www.linkedin.com/in/pratikostwal/',
+        //         },
+        //         {
+        //             platform: SocialPlatform.PORTFOLIO,
+        //             url: 'https://pratikostwal.wixsite.com/productsuccess',
+        //         },
+        //     ],
+        // },
         {
             name: 'Ruchi Tripathi',
             position: 'UX Designer',
