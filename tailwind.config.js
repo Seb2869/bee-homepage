@@ -13,6 +13,11 @@ export default {
                 inter: ['Inter', 'sans-serif'],
                 anton: ['Anton', 'sans-serif'],
             },
+            screens: {
+                '3xl': '1920px',
+                '4xl': '2140px',
+                '5xl': '2360px',
+            },
         },
     },
     plugins: [],

@@ -51,9 +51,9 @@ export const RoadmapTab: React.FC = () => {
     return (
         <div className="app-container">
             <h2 className="section-heading text-center">Roadmap</h2>
-            <p className="section-body text-primary text-center xl:mt-1">2025-26</p>
+            <p className="section-body text-primary text-center xl:mt-1 3xl:font-semibold">2025-26</p>
 
-            <div className="w-full max-w-screen-md mx-auto relative pl-4 mt-4 md:px-0 md:mt-6 lg:mt-8 xl:mt-10">
+            <div className="w-full max-w-screen-md mx-auto relative pl-4 mt-4 md:px-0 md:mt-6 lg:mt-8 xl:mt-10 3xl:max-w-screen-lg">
                 {/* Middle Line */}
                 <div className="w-[2px] bg-white h-full absolute top-0 left-0 md:left-1/2 lg:w-1"></div>
 

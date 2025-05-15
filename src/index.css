@@ -53,7 +53,7 @@
 
     .app-container,
     .section-container {
-        @apply w-full max-w-[1880px] mx-auto px-4 py-7 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 xl:px-32 2xl:py-16;
+        @apply w-full max-w-[1880px] mx-auto px-4 py-7 md:px-6 md:py-8 lg:px-8 lg:py-10 xl:py-14 xl:px-32 2xl:py-16 3xl:py-20 4xl:py-24 5xl:py-28;
     }
 
     .btn-primary {
@@ -109,6 +109,6 @@
     }
 
     .roadmap-dot {
-        @apply w-4 h-4 rounded-full absolute z-[5] md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8;
+        @apply w-4 h-4 rounded-full absolute z-[5] md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 3xl:w-10 3xl:h-10;
     }
 }

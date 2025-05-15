@@ -42,7 +42,7 @@ export const AboutUsTabs: React.FC = () => {
                         {tabs.map((tab) => (
                             <div
                                 key={tab.id}
-                                className={`flex justify-center items-center text-[10px] py-1 transition-colors duration-300 ease-linear md:text-sm md:py-2 lg:text-lg xl:text-xl xl:py-3 2xl:text-[22px] ${
+                                className={`flex justify-center items-center select-none text-[10px] py-1 transition-colors duration-300 ease-linear md:text-sm md:py-2 lg:text-lg xl:text-xl xl:py-3 2xl:text-[22px] ${
                                     activeTab === tab.id
                                         ? 'cursor-default bg-black text-white rounded'
                                         : 'cursor-pointer hover:bg-gray-100'

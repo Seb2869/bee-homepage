@@ -19,7 +19,7 @@ export const HeroSection: React.FC = () => {
                 onClose={() => setIsVideoModalOpen(false)}
             />
 
-            <div className="z-20 relative pointer-events-none app-container !pt-28 !pb-48 md:!pb-32 md:!pt-36 lg:!pb-36 lg:!pt-36 xl:!pb-52 xl:!pt-52">
+            <div className="z-20 relative pointer-events-none app-container !pt-28 !pb-48 md:!pb-32 md:!pt-36 lg:!pb-36 lg:!pt-36 xl:!pb-52 xl:!pt-52 2xl:!pb-60 2xl:!pt-64 5xl:!pb-[264px] 5xl:!pt-[280px]">
                 <div className="w-full">
                     <h1 className="main-title">
                         Command reliable
@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
                     <a
                         href={LAUNCH_APP_URL}
                         target="_blank"
-                        className="btn-primary pointer-events-auto mt-4 flex items-center gap-x-[3px] md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:px-6 xl:py-2"
+                        className="btn-primary pointer-events-auto mt-4 flex items-center gap-x-[3px] md:gap-x-1 md:mt-6 lg:px-5 lg:mt-8 xl:px-6 xl:py-2 2xl:py-3 2xl:px-7"
                     >
                         <span>LAUNCH APP</span>
                         <img
@@ -47,13 +47,13 @@ export const HeroSection: React.FC = () => {
                 </div>
             </div>
 
-            <div className="z-20 pointer-events-none absolute bottom-0 right-0 w-full bg-primary px-3 pt-3 angled-left-rectangle md:w-4/6 md:px-4 lg:w-1/2 xl:w-[55%] xl:px-6 xl:pt-6">
-                <div className="angled-left-rectangle flex w-full items-center gap-x-3 md:gap-x-4 xl:gap-x-5">
+            <div className="z-20 pointer-events-none absolute bottom-0 right-0 w-full bg-primary px-3 pt-3 angled-left-rectangle md:w-4/6 md:px-4 lg:w-1/2 xl:w-[55%] xl:px-6 xl:pt-6 2xl:w-1/2 3xl:w-[45%] 4xl:w-2/5 5xl:w-[35%]">
+                <div className="angled-left-rectangle flex w-full items-center gap-x-3 md:gap-x-4 xl:gap-x-5 5xl:gap-x-6">
                     <div className="relative pointer-events-auto">
                         <img
                             src={Thumbnail}
                             alt="Demo Video"
-                            className="w-[200px] h-[100px] object-cover rounded md:w-[240px] lg:h-[112px] lg:w-[232px] xl:h-[148px] xl:w-[340px] xl:rounded-md 2xl:w-[426px] 2xl:h-[180px] 2xl:rounded-lg"
+                            className="w-[200px] h-[100px] object-cover rounded md:w-[240px] lg:h-[112px] lg:w-[232px] xl:h-[148px] xl:w-[340px] xl:rounded-md 2xl:w-[356px] 2xl:h-[156px] 2xl:rounded-lg"
                         />
                         <BiPlay
                             className="text-black absolute top-[35%] left-1/2 text-4xl cursor-pointer lg:text-5xl"
