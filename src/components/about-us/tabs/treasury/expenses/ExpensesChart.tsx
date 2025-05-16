@@ -21,6 +21,7 @@ export const ExpensesChart: React.FC = () => {
         },
         options = {
             cutout: '70%',
+            responsive: true,
             plugins: {
                 tooltip: {
                     enabled: false,
@@ -29,7 +30,7 @@ export const ExpensesChart: React.FC = () => {
         };
 
     return (
-        <div className="w-1/2 relative">
+        <div className="w-1/2 relative aspect-[1/1]">
             <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center">
                 <p className="section-body text-center">Total</p>
                 <h3 className="section-heading text-center xl:my-2">${getTotalSpentAmount().toLocaleString()}</h3>
