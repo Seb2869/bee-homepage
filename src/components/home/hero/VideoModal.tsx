@@ -1,5 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
 import { BiX } from 'react-icons/bi';
+import { APP_DEMO_YT_VIDEO } from '../../../constants/common.constants';
+import { videoModalVariants } from '../../../constants/variants';
 
 type VideoModalProps = {
     isOpen: boolean;
@@ -7,17 +10,7 @@ type VideoModalProps = {
 };
 
 export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
-    const [shouldRender, setShouldRender] = useState(isOpen),
-        modalRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        if (isOpen) {
-            setShouldRender(true);
-        } else {
-            const timeout = setTimeout(() => setShouldRender(false), 300);
-            return () => clearTimeout(timeout);
-        }
-    }, [isOpen]);
+    const modalRef = useRef<HTMLDivElement>(null);
 
     const handleClickOutside = (e: MouseEvent) => {
         if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
@@ -35,38 +28,46 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         };
     }, [isOpen]);
 
-    if (!shouldRender) return null;
-
     return (
-        <div
-            className={`fixed inset-0 z-[200] w-screen h-screen flex items-center justify-center bg-black/80 px-4 transition-opacity duration-300 ${
-                isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-            }`}
-        >
-            <div
-                ref={modalRef}
-                className={`relative w-full max-w-4xl aspect-video bg-black shadow-lg transform transition-all duration-300 ${
-                    isOpen ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-2'
-                }`}
-            >
-                <button
-                    onClick={onClose}
-                    className="absolute -top-10 -right-2 xl:top-2 xl:-right-10 text-white text-2xl z-10"
-                    aria-label="Close"
+        <AnimatePresence>
+            {isOpen && (
+                <motion.div
+                    variants={videoModalVariants.backDropVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="close"
+                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    className="fixed inset-0 z-[200] w-screen h-screen flex items-center justify-center bg-black/80 backdrop-blur-sm px-4 opacity-0 pointer-events-none"
                 >
-                    <BiX size={32} />
-                </button>
+                    <motion.div
+                        ref={modalRef}
+                        className="relative w-full max-w-6xl aspect-video bg-black shadow-lg"
+                        variants={videoModalVariants.modalVariants}
+                        initial="hidden"
+                        animate="visible"
+                        exit="close"
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    >
+                        <button
+                            onClick={onClose}
+                            className="absolute -top-10 -right-2 xl:top-2 xl:-right-10 text-white text-2xl z-10"
+                            aria-label="Close"
+                        >
+                            <BiX size={32} />
+                        </button>
 
-                <div className="w-full h-full rounded overflow-hidden xl:rounded-md 2xl:rounded-lg">
-                    <iframe
-                        className="w-full h-full"
-                        src="https://www.youtube.com/embed/kFoXEwyOlbE?si=5TnUmJ35ruj6rkor"
-                        title="YouTube video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    />
-                </div>
-            </div>
-        </div>
+                        <div className="w-full h-full rounded overflow-hidden xl:rounded-md 2xl:rounded-lg">
+                            <iframe
+                                className="w-full h-full"
+                                src={`https://www.youtube.com/embed/${APP_DEMO_YT_VIDEO}?controls=1&autoplay=1&rel=0`}
+                                title="YouTube video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                    </motion.div>
+                </motion.div>
+            )}
+        </AnimatePresence>
     );
 };

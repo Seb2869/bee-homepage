@@ -1,3 +1,5 @@
+import { Variants } from 'framer-motion';
+
 export const reviewCardVariants = {
     hidden: (dir: number) => ({
         opacity: 0,
@@ -37,6 +39,40 @@ export const accordionVariants = {
         transition: {
             duration: 0.3,
             ease: 'easeInOut',
+        },
+    },
+};
+
+export const videoModalVariants: {
+    backDropVariants: Variants;
+    modalVariants: Variants;
+} = {
+    backDropVariants: {
+        hidden: {
+            opacity: 0,
+            pointerEvents: 'none',
+        },
+        visible: {
+            opacity: 1,
+            pointerEvents: 'auto',
+        },
+        close: {
+            opacity: 0,
+            pointerEvents: 'none',
+        },
+    },
+    modalVariants: {
+        hidden: {
+            opacity: 0,
+            scale: 0.95,
+        },
+        visible: {
+            opacity: 1,
+            scale: 1,
+        },
+        close: {
+            opacity: 0,
+            scale: 0.95,
         },
     },
 };
