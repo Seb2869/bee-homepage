@@ -1,8 +1,8 @@
 import React from 'react';
 import { BiLogoDiscordAlt, BiLogoFacebookCircle, BiLogoInstagramAlt, BiLogoLinkedinSquare } from 'react-icons/bi';
-
 import { Link } from 'react-router-dom';
-import { menuItems, SocialHandleLinks } from '../constants/common.constants';
+import { DISCORD_URL, menuItems, SocialHandleLinks } from '../constants/common.constants';
+
 import { AppLogo } from './AppLogo';
 
 type SocialHandle = {
@@ -41,10 +41,14 @@ export const Footer: React.FC = () => {
                         review settings and monitor performance.
                     </p>
                 </div>
-                <button className="btn-primary mx-auto flex items-center gap-x-[3px] mt-5 md:mt-7 md:gap-x-1 xl:mt-8 2xl:mt-10">
+                <a
+                    href={DISCORD_URL}
+                    target="_blank"
+                    className="btn-primary mx-auto flex items-center gap-x-[3px] mt-5 md:mt-7 md:gap-x-1 xl:mt-8 2xl:mt-10"
+                >
                     <BiLogoDiscordAlt className="text-2xl md:text-3xl 2xl:text-4xl" />
                     <span>Join Our Discord</span>
-                </button>
+                </a>
                 <div className="grid grid-cols-1 border-b border-b-white border-opacity-30 text-sm font-anton text-center gap-y-2 py-5 md:grid-cols-3 md:gap-y-0 md:py-7 md:text-base xl:py-10 xl:text-xl 2xl:py-12 2xl:text-2xl">
                     {menuItems.map((item, index) => (
                         <span key={index}>
