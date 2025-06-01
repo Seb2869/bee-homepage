@@ -29,8 +29,9 @@ export const Features: React.FC = () => {
     ];
 
     return (
-        <section className="text-white bg-black top-right-sharp-edge-rectangle">
+        <section className="text-white bg-black top-right-sharp-edge-rectangle" aria-labelledby="features-heading">
             <div className="app-container flex flex-col md:flex-col gap-y-14 2xl:gap-y-16">
+                <h2 id="features-heading" className="sr-only">CommandHive Features</h2>
                 {features.map((feature, index) => (
                     <FeatureComponent
                         key={index}

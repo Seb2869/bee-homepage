@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Question } from '../../models/common';
 import { QuestionAccordion } from './QuestionAccordion';
 
@@ -29,6 +29,40 @@ export const FAQs: React.FC = () => {
             },
         ],
         [selectedQuestion, setSelectedQuestion] = useState<number | null>(0);
+
+    useEffect(() => {
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": questions.map(q => ({
+                "@type": "Question",
+                "name": q.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": q.description
+                }
+            }))
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(faqSchema);
+        script.id = 'faq-schema';
+        
+        const existingScript = document.getElementById('faq-schema');
+        if (existingScript) {
+            existingScript.remove();
+        }
+        
+        document.head.appendChild(script);
+
+        return () => {
+            const scriptToRemove = document.getElementById('faq-schema');
+            if (scriptToRemove) {
+                scriptToRemove.remove();
+            }
+        };
+    }, [questions]);
 
     return (
         <section className="w-full text-black bg-offWhite">
