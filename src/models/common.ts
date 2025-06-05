@@ -79,6 +79,10 @@ export enum UpdateItemType {
 export type ListPoint = {
     id: number;
     text: string;
+    links?: Array<{
+        text: string;
+        url: string;
+    }>;
 };
 
 export type CardsItem = {
