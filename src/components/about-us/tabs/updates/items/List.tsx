@@ -33,7 +33,7 @@ export const List: React.FC<ListProps> = ({ icon, listItems }) => {
                         className="text-primary hover:text-primary/80 transition-colors font-medium underline"
                     >
                         {link.text}
-                    </a>
+                    </a>,
                 );
                 lastIndex = linkIndex + link.text.length;
             }
@@ -52,16 +52,14 @@ export const List: React.FC<ListProps> = ({ icon, listItems }) => {
             {listItems.map((item, index) => (
                 <li
                     key={index}
-                    className={`flex items-start gap-x-3 xl:gap-x-5 ${index === listItems.length - 1 ? 'pt-2 lg:pt-3' : 'py-2 lg:py-3'}`}
+                    className={`flex items-center gap-x-3 xl:gap-x-5 ${index === listItems.length - 1 ? 'pt-2 lg:pt-3' : 'py-2 lg:py-3'}`}
                 >
                     <img
                         src={icon}
                         alt="point"
                         className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10 mt-1 flex-shrink-0"
                     />
-                    <p className="section-body leading-relaxed">
-                        {renderTextWithLinks(item.text, item.links)}
-                    </p>
+                    <p className="section-body leading-relaxed">{renderTextWithLinks(item.text, item.links)}</p>
                 </li>
             ))}
         </ul>
