@@ -8,7 +8,28 @@ export const QuadraticFunding: React.FC = () => {
         [numberOfCalls, setNumberOfCalls] = React.useState<number>(0);
 
     const calculateEarnings = (agents: number, calls: number): void => {
-        // TODO: Vaibhav Maheshwari please share details on how to calculate earnings
+        // Quadratic Funding Algorithm Implementation
+        // agents = number of donors
+        // calls = contribution amount per donor
+        // Formula: (sqrt(contribution) * sqrt(donors))^2 * multiplier
+        
+        const multiplier = 0.1; // Dollar multiplier (adjustable)
+        
+        if (agents <= 0 || calls <= 0) {
+            setEarnings(0);
+            return;
+        }
+        
+        // Standard quadratic funding: sum of sqrt(individual_contributions)^2
+        // Since we have uniform contribution (calls per agent), we calculate:
+        // sqrt(calls) * agents (sum of sqrt for each donor)
+        // Then square it for quadratic effect
+        const sqrtContribution = Math.sqrt(calls);
+        const totalSqrtSum = sqrtContribution * agents;
+        const quadraticAmount = Math.pow(totalSqrtSum, 2);
+        
+        const finalEarnings = quadraticAmount * multiplier;
+        setEarnings(Math.round(finalEarnings * 100) / 100); // Round to 2 decimal places
     };
 
     return (
