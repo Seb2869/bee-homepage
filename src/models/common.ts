@@ -79,6 +79,10 @@ export enum UpdateItemType {
 export type ListPoint = {
     id: number;
     text: string;
+    links?: Array<{
+        text: string;
+        url: string;
+    }>;
 };
 
 export type CardsItem = {
@@ -107,4 +111,9 @@ export type RoadMapItem = {
     title: string;
     description: string;
     isCompleted: boolean;
+};
+
+export type ServerListingStep = {
+    title: string;
+    description: string;
 };

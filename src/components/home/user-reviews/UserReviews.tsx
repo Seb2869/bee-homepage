@@ -64,7 +64,10 @@ export const UserReviews: React.FC = () => {
     };
 
     return (
-        <section className="w-full text-black bg-offWhite">
+        <section
+            id="reviews"
+            className="w-full text-black bg-offWhite"
+        >
             <div className="app-container">
                 <div className="w-full flex items-center justify-between">
                     <h2 className="section-heading">

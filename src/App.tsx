@@ -5,7 +5,8 @@ import { Pages } from './constants/common.constants';
 import RootLayout from './layouts/RootLayout';
 
 const Home = lazy(() => import('./pages/Home')),
-    AboutUs = lazy(() => import('./pages/AboutUs'));
+    AboutUs = lazy(() => import('./pages/AboutUs')),
+    Build = lazy(() => import('./pages/Build'));
 
 const App: React.FC = () => {
     return (
@@ -22,6 +23,10 @@ const App: React.FC = () => {
                     <Route
                         path={Pages.ABOUT_US}
                         element={<AboutUs />}
+                    />
+                    <Route
+                        path={Pages.BUILD}
+                        element={<Build />}
                     />
                 </Route>
             </Routes>

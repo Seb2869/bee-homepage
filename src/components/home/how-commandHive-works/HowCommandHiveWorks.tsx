@@ -25,7 +25,10 @@ export const HowCommandHiveWorks: React.FC = () => {
         ];
 
     return (
-        <section className="w-full text-black bg-offWhite">
+        <section
+            id="how-it-works"
+            className="w-full text-black bg-offWhite"
+        >
             <div className="section-container">
                 <div className="section-image-wrapper">
                     <img

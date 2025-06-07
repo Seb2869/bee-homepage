@@ -16,6 +16,12 @@
     body {
         @apply overflow-x-hidden font-inter font-normal text-black text-base bg-offWhite;
     }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 }
 
 @layer utilities {
@@ -25,6 +31,10 @@
 
     .top-right-sharp-edge-rectangle {
         background-image: linear-gradient(-135deg, #fafafa 40px, transparent 0px);
+    }
+
+    .top-right-sharp-edge-rectangle-black {
+        background-image: linear-gradient(-135deg, #14110e 40px, transparent 0px);
     }
 
     .bottom-right-sharp-edge-rectangle {
