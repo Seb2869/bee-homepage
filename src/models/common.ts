@@ -112,3 +112,8 @@ export type RoadMapItem = {
     description: string;
     isCompleted: boolean;
 };
+
+export type ServerListingStep = {
+    title: string;
+    description: string;
+};
