@@ -4,6 +4,7 @@ export const Pages = {
     ROOT: '/',
     HOME: '/',
     ABOUT_US: '/about-us',
+    BUILD: '/build',
 };
 
 // TODO: Vaibhav Maheshwari please update this URL
@@ -24,6 +25,10 @@ export const menuItems: MenuItem[] = [
     {
         link: Pages.ABOUT_US,
         title: 'About Us',
+    },
+    {
+        link: Pages.BUILD,
+        title: 'Build',
     },
     {
         link: LAUNCH_APP_URL,
