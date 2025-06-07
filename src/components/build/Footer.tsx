@@ -6,13 +6,13 @@ import FooterGrid from '../../assets/build/footer/footer-grid.webp';
 export const Footer: React.FC = () => {
     return (
         <div className="w-full relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full z-10">
+            <div className="absolute top-0 left-0 w-full h-full z-10 hidden md:inline-block">
                 <img
                     src={FooterGrid}
                     alt="Grid"
                 />
             </div>
-            <div className="absolute top-0 left-0 w-full h-full top-right-sharp-edge-rectangle z-[12]"></div>
+            <div className="absolute top-0 left-0 w-full h-full top-right-sharp-edge-rectangle z-[12] bg-white md:bg-transparent"></div>
 
             <div className="relative app-container z-[15]">
                 <h2 className="section-heading text-center">List Your MCP Server Now!</h2>
