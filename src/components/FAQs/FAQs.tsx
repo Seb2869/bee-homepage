@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Question } from '../../models/common';
 import { QuestionAccordion } from './QuestionAccordion';
 
@@ -32,28 +32,28 @@ export const FAQs: React.FC = () => {
 
     useEffect(() => {
         const faqSchema = {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": questions.map(q => ({
-                "@type": "Question",
-                "name": q.question,
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": q.description
-                }
-            }))
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: questions.map((q) => ({
+                '@type': 'Question',
+                name: q.question,
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: q.description,
+                },
+            })),
         };
 
         const script = document.createElement('script');
         script.type = 'application/ld+json';
         script.textContent = JSON.stringify(faqSchema);
         script.id = 'faq-schema';
-        
+
         const existingScript = document.getElementById('faq-schema');
         if (existingScript) {
             existingScript.remove();
         }
-        
+
         document.head.appendChild(script);
 
         return () => {
@@ -65,7 +65,10 @@ export const FAQs: React.FC = () => {
     }, [questions]);
 
     return (
-        <section className="w-full text-black bg-offWhite">
+        <section
+            id="faq"
+            className="w-full text-black bg-offWhite"
+        >
             <div className="section-container md:gap-x-4 xl:gap-x-16 2xl:gap-x-24">
                 <div className="w-full flex justify-center md:w-2/5 md:justify-start">
                     <img
