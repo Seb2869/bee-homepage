@@ -17,8 +17,7 @@ export const Footer: React.FC = () => {
             <div className="relative app-container z-[15]">
                 <h2 className="section-heading text-center">List Your MCP Server Now!</h2>
                 <p className="section-body text-center my-3 md:my-4 lg:w-3/4 lg:mx-auto xl:my-5 2xl:my-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    AI should serve you and not the other way around. Build powerful engines that work 24-7. 
                 </p>
                 <a
                     href={LAUNCH_APP_URL}

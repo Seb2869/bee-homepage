@@ -1,7 +1,6 @@
 import React from 'react';
-import { LAUNCH_APP_URL } from '../../constants/common.constants';
 
-import LeaderBoardSkeleton from '../../assets/build/leaderboard/leaderboard-skeleton.webp';
+import LeaderBoardSkeleton from '../../assets/build/leaderboard/leaderboard-skeleton.png';
 
 export const LeaderBoard: React.FC = () => {
     return (
@@ -11,25 +10,26 @@ export const LeaderBoard: React.FC = () => {
                     <img
                         src={LeaderBoardSkeleton}
                         alt="LeaderBoard Skeleton"
-                        className="w-3/4 md:w-[80%]"
+                        className="w-3/4 md:w-[100%]"
                     />
                 </div>
                 <div className="section-body-container">
                     <h2 className="section-heading">
                         Rank High On The <br></br>
-                        LeaderBoard To Earn More
+                        LeaderBoard
                     </h2>
                     <p className="section-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        We release a list of required MCP servers from our partners and collaborators. 
+                        The leaderboard resets every month to build a level playing field for developers. We will review payouts
+                        for authencity and deepdive on them before making the decision.
                     </p>
-                    <a
+                    {/* <a
                         href={LAUNCH_APP_URL}
                         target="_blank"
                         className="btn-primary pointer-events-auto !mt-2 lg:px-5 xl:px-6 xl:py-2 2xl:py-3 2xl:px-7"
                     >
                         View LeaderBoard
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </section>

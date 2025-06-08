@@ -11,13 +11,13 @@ export const EarningsCard: React.FC<{ earnings: number }> = ({ earnings }) => {
                 <h2 className="main-title mt-3">$ {parseFloat(earnings.toFixed(2)).toLocaleString()}</h2>
                 <div className="text-black text-center flex flex-col items-center mt-3 xl:mt-6">
                     <BiInfoCircle className="text-primary text-lg my-2 xl:text-xl" />
-                    <p className="section-body">Know more about how does this works.</p>
+                    <p className="section-body">This is an example for how much you can earn.</p>
                     <a
                         href="https://qf.gitcoin.co/?grant=&grant=&grant=&grant=&match=1000"
                         target="_blank"
                         className="section-body !font-bold !underline !underline-offset-4 hover:text-primary"
                     >
-                        Quadratic Funding
+                        Learn More about Quadratic Funding
                     </a>
                 </div>
             </div>
