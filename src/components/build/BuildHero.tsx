@@ -12,7 +12,7 @@ export const BuildHero: React.FC = () => {
                         Build Your MCP <br></br>Server Business Now<span className="text-primary">!</span>
                     </h1>
                     <p className="section-body mt-2 md:mt-3 lg:mt-4 xl:mt-5 xl:w-[80%] 2xl:mt-6">
-                        We ensure app developers get paid for their MCP server usage.
+                        We ensure developers get paid for their MCP server usage.
                     </p>
                     <a
                         href={LAUNCH_APP_URL}
