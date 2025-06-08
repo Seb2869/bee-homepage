@@ -1,5 +1,4 @@
 import React from 'react';
-import { EarningsCalculator } from './EarningsCalculator';
 import { EarningsCard } from './EarningsCard';
 
 type Agent = {
