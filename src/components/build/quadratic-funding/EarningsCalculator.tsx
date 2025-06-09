@@ -30,7 +30,7 @@ export const EarningsCalculator: React.FC<EarningsCalculatorProps> = ({
                 <p className="section-body !font-semibold">Agents</p>
                 <button
                     type="button"
-                    className="bg-primary text-black text-lg p-1 rounded-full disabled:opacity-50 disabled:cursor-not-allowed md:text-xl lg:text-2xl xl:p-[10px]"
+                    className="font-bold text-xl p-1 rounded bg-primary text-black border border-primary cursor-pointer disabled:opacity-50 disabled:cursor-default md:text-2xl md:p-2 xl:p-[10px]"
                     onClick={addAgent}
                     disabled={agents.length >= 5}
                     aria-label="Add agent"
@@ -44,18 +44,19 @@ export const EarningsCalculator: React.FC<EarningsCalculatorProps> = ({
                 className="flex flex-col gap-y-4 lg:gap-y-6"
             >
                 <div className="flex flex-col gap-y-4 lg:gap-y-6">
-                    {agents.map((agent) => (
+                    {agents.map((agent, index) => (
                         <div
                             key={agent.id}
                             className="flex items-center"
                         >
                             <NumberInput
-                                label={`Agent #${agent.id}`}
-                                id={`agent-${agent.id}`}
+                                label={`Agent #${index + 1}`}
+                                id={`agent-${index + 1}`}
                                 value={agent.toolCalls}
                                 onChange={(value: number) => {
                                     updateAgentToolCalls(agent.id, value);
                                 }}
+                                placeholder="Tool calls"
                             />
 
                             <button

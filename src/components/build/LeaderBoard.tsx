@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LeaderBoardSkeleton from '../../assets/build/leaderboard/leaderboard-skeleton.png';
+import LeaderBoardImage from '../../assets/build/leaderboard/leaderboard.webp';
 
 export const LeaderBoard: React.FC = () => {
     return (
@@ -8,20 +8,20 @@ export const LeaderBoard: React.FC = () => {
             <div className="section-container md:!flex-row-reverse md:!items-center">
                 <div className="section-image-wrapper md:!justify-end">
                     <img
-                        src={LeaderBoardSkeleton}
+                        src={LeaderBoardImage}
                         alt="LeaderBoard Skeleton"
-                        className="w-3/4 md:w-[100%]"
+                        className="w-4/5 md:w-[90%]"
                     />
                 </div>
-                <div className="section-body-container">
+                <div className="section-body-container mt-3 md:mt-0">
                     <h2 className="section-heading">
                         Rank High On The <br></br>
                         LeaderBoard
                     </h2>
                     <p className="section-body">
-                        We release a list of required MCP servers from our partners and collaborators. 
-                        The leaderboard resets every month to build a level playing field for developers. We will review payouts
-                        for authencity and deepdive on them before making the decision.
+                        We release a list of required MCP servers from our partners and collaborators. The leaderboard
+                        resets every month to build a level playing field for developers. We will review payouts for
+                        authencity and deepdive on them before making the decision.
                     </p>
                     {/* <a
                         href={LAUNCH_APP_URL}

@@ -6,16 +6,16 @@ import { EarningsCard } from './EarningsCard';
 export const QuadraticFunding: React.FC = () => {
     const [earnings, setEarnings] = React.useState<number>(0);
     const [agents, setAgents] = React.useState<Agent[]>([
-        { id: 1, toolCalls: 200 },
-        { id: 2, toolCalls: 100 },
-        { id: 3, toolCalls: 300 },
+        { id: 1749486968084, toolCalls: 200 },
+        { id: 1749486970311, toolCalls: 100 },
+        { id: 1749487000891, toolCalls: 300 },
     ]);
 
     const addAgent = (): void => {
         if (agents.length >= 5) return; // Maximum 5 agents
         const randomToolCalls = Math.floor(Math.random() * 201) + 100; // Random number between 100-300
         const newAgent: Agent = {
-            id: agents.length + 1,
+            id: Date.now(),
             toolCalls: randomToolCalls,
         };
         setAgents([...agents, newAgent]);
