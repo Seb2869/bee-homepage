@@ -1,45 +1,75 @@
 import React from 'react';
+import { BiPlus, BiTrash } from 'react-icons/bi';
+import { Agent } from '../../../models/common';
 import { NumberInput } from './NumberInput';
 
 type EarningsCalculatorProps = {
-    numberOfAgents: number;
-    numberOfCalls: number;
-    onNumberOfAgentsChange: (value: number) => void;
-    onNumberOfCallsChange: (value: number) => void;
-    calculateEarnings: (numberOfAgents: number, numberOfCalls: number) => void;
+    calculateEarnings: () => void;
+    addAgent: () => void;
+    agents: Agent[];
+    updateAgentToolCalls: (id: number, toolCalls: number) => void;
+    removeAgent: (id: number) => void;
 };
 
 export const EarningsCalculator: React.FC<EarningsCalculatorProps> = ({
-    numberOfAgents,
-    numberOfCalls,
-    onNumberOfAgentsChange,
-    onNumberOfCallsChange,
     calculateEarnings,
+    addAgent,
+    agents,
+    updateAgentToolCalls,
+    removeAgent,
 }) => {
     const handleEarningsCalculation = (event: React.MouseEvent<HTMLFormElement>) => {
         event.preventDefault();
-        calculateEarnings(numberOfAgents, numberOfCalls);
+        calculateEarnings();
     };
 
     return (
         <div className="w-full flex flex-col gap-y-4 md:w-3/5 lg:w-1/2 lg:gap-y-6">
             <h2 className="section-subheading !font-inter uppercase !font-bold">Calculate Your Earning</h2>
+            <div className="flex justify-between items-center">
+                <p className="section-body !font-semibold">Agents</p>
+                <button
+                    type="button"
+                    className="bg-primary text-black text-lg p-1 rounded-full disabled:opacity-50 disabled:cursor-not-allowed md:text-xl lg:text-2xl xl:p-[10px]"
+                    onClick={addAgent}
+                    disabled={agents.length >= 5}
+                    aria-label="Add agent"
+                    title="Add agent"
+                >
+                    <BiPlus />
+                </button>
+            </div>
             <form
                 onSubmit={handleEarningsCalculation}
                 className="flex flex-col gap-y-4 lg:gap-y-6"
             >
-                <NumberInput
-                    label="Number of Agents using your MCP server"
-                    id="number-of-agents"
-                    value={numberOfAgents}
-                    onChange={onNumberOfAgentsChange}
-                />
-                <NumberInput
-                    label="Number of tool calls made to your MCP server"
-                    id="number-of-calls"
-                    value={numberOfCalls}
-                    onChange={onNumberOfCallsChange}
-                />
+                <div className="flex flex-col gap-y-4 lg:gap-y-6">
+                    {agents.map((agent) => (
+                        <div
+                            key={agent.id}
+                            className="flex items-center"
+                        >
+                            <NumberInput
+                                label={`Agent #${agent.id}`}
+                                id={`agent-${agent.id}`}
+                                value={agent.toolCalls}
+                                onChange={(value: number) => {
+                                    updateAgentToolCalls(agent.id, value);
+                                }}
+                            />
+
+                            <button
+                                onClick={() => removeAgent(agent.id)}
+                                title="Remove Agent"
+                                aria-label="Remove Agent"
+                                disabled={agents.length <= 1}
+                                className="text-lg ml-3 hover:text-primary disabled:opacity-50 disabled:hover:text-white disabled:cursor-not-allowed md:ml-4 lg:text-xl 2xl:text-2xl"
+                            >
+                                <BiTrash />
+                            </button>
+                        </div>
+                    ))}
+                </div>
                 <button
                     type="submit"
                     className="btn-primary pointer-events-auto !mt-2 lg:px-5 xl:px-6 xl:py-2 2xl:py-3 2xl:px-7"

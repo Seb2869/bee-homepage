@@ -117,3 +117,8 @@ export type ServerListingStep = {
     title: string;
     description: string;
 };
+
+export type Agent = {
+    id: number;
+    toolCalls: number;
+};
