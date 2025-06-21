@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { BiMenu, BiX } from 'react-icons/bi';
+import { FaArrowUp } from 'react-icons/fa';
 import { NavLink, useLocation } from 'react-router-dom';
 import { LAUNCH_APP_URL, menuItems } from '../../constants/common.constants';
-
 import { AppLogo } from '../AppLogo';
 
 export const MobileMenu: React.FC = () => {
@@ -29,15 +29,30 @@ export const MobileMenu: React.FC = () => {
                 className="absolute left-0 -top-[400px] h-fit p-4 z-[9] w-full bg-white"
             >
                 <div className="text-sm flex flex-col font-anton text-center gap-y-2 md:text-base lg:hidden">
-                    {menuItems.slice(0, menuItems.length - 1).map((item, index) => (
-                        <NavLink
-                            to={item.link}
-                            key={index}
-                            className={({ isActive }) => (isActive ? 'text-primary' : 'text-black')}
-                        >
-                            {item.title}
-                        </NavLink>
-                    ))}
+                    {menuItems.slice(0, menuItems.length - 1).map((item, index) =>
+                        !item.isOutsideLink ? (
+                            <NavLink
+                                to={item.link}
+                                key={index}
+                                className={({ isActive }) => (isActive ? 'text-primary' : 'text-black')}
+                            >
+                                {item.title}
+                            </NavLink>
+                        ) : (
+                            <a
+                                key={index}
+                                href={item.link}
+                                target="_blank"
+                                className="font-medium flex justify-center items-center gap-x-[3px] xl:text-base 2xl:text-lg"
+                            >
+                                <span>{item.title}</span>
+                                <FaArrowUp
+                                    size={16}
+                                    className="rotate-45"
+                                />
+                            </a>
+                        ),
+                    )}
                     <a
                         href={LAUNCH_APP_URL}
                         target="_blank"

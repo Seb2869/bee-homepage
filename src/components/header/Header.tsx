@@ -1,7 +1,7 @@
 import React from 'react';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
 import { LAUNCH_APP_URL, menuItems } from '../../constants/common.constants';
-
 import { AppLogo } from '../AppLogo';
 import { MobileMenu } from './MobileMenu';
 
@@ -23,14 +23,25 @@ export const Header: React.FC = () => {
                                 key={index}
                                 className="relative"
                             >
-                                <NavLink
-                                    to={item.link}
-                                    className={({ isActive }) =>
-                                        `text-sm font-medium xl:text-base 2xl:text-lg ${isActive ? 'cursor-default after:content-[""] after:w-1/2 after:h-[6px] after:bg-primary after:absolute after:-bottom-[6px] after:left-0' : 'xl:hover:text-primary'}`
-                                    }
-                                >
-                                    {item.title}
-                                </NavLink>
+                                {!item.isOutsideLink ? (
+                                    <NavLink
+                                        to={item.link}
+                                        className={({ isActive }) =>
+                                            `text-sm font-medium xl:text-base 2xl:text-lg ${isActive ? 'cursor-default after:content-[""] after:w-1/2 after:h-[6px] after:bg-primary after:absolute after:-bottom-[6px] after:left-0' : 'xl:hover:text-primary'}`
+                                        }
+                                    >
+                                        {item.title}
+                                    </NavLink>
+                                ) : (
+                                    <a
+                                        href={item.link}
+                                        target="_blank"
+                                        className="text-sm font-medium flex items-center gap-x-[2px] hover:text-primary xl:text-base 2xl:text-lg"
+                                    >
+                                        <span>{item.title}</span>
+                                        <FiArrowUpRight size={18} />
+                                    </a>
+                                )}
                             </div>
                         ))}
                     </nav>
